@@ -1,0 +1,50 @@
+.bg{
+  background-image: url("~/public/productsectionbg.webp");
+}
+
+.parallaxContainer {
+  position: relative;
+}
+
+.parallax {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("~/public/parallax2.jpg");
+}
+
+.parallaxText {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Adjust the color as needed */
+}
+/* .overlay-lighten {
+  filter: brightness(50%);
+  height: 400px;
+  width: 100%;
+}
+.overlay-content {
+  text-align: center;
+  position: relative;
+}
+.h22 {
+  padding: 0 20px;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  min-width: 350px;
+}
+.spaan {
+  font-size: 60pt;
+  font-family: "Architects Daughter", lato, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #142337;
+} */

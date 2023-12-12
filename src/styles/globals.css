@@ -1,0 +1,77 @@
+body {
+  background-color: aqua;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+.sparkle {
+  max-width: 10em;
+  color: #441151;
+  margin: auto auto;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.u-hover--sparkle {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.75em;
+  &::before,
+  &::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+  }
+
+  &::before {
+    border-top: 0.2em solid #dfb722;
+    border-bottom: 0.2em solid #dfb722;
+    transform: scale3d(0, 1, 1);
+  }
+
+  &::after {
+    border-left: 0.2em solid #df7a22;
+    border-right: 0.2em solid #df7a22;
+    transform: scale3d(1, 0, 1);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: scale3d(1, 1, 1);
+    transition: transform 900ms;
+  }
+}
+
+.custom .carousel .slide .legend {
+  /* transition: all .5s ease-in-out; */
+  position: absolute;
+  /* left: 46%; */
+  margin-left: -15%;
+  width: 33%;
+  top: 40%;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  opacity: 1;
+  font-size: 12px;
+  text-align: center;
+}

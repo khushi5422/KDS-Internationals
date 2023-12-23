@@ -1,4 +1,5 @@
 import React from "react";
+import Roundbtn from "./roundbtn";
 
 export default function LeftShadowCard() {
   return (
@@ -20,7 +21,7 @@ export default function LeftShadowCard() {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #008CBA;
+        background-color: #00000014;
         overflow: hidden;
         width: 0;
         height: 100%;
@@ -44,10 +45,12 @@ export default function LeftShadowCard() {
       }
     `}</style>
       <div className="box">
+      <h4>The Flavors Of Spices</h4>
+     
         <img src="slider2.jpg" alt="Avatar" className="image" />
-        <div className="overlay">
-          <div className="text">Hello World</div>
-        </div>
+        {/* <div className="overlay">
+          <div className="text">The Flavors of Spices</div>
+        </div> */}
       </div>
     </>
   );

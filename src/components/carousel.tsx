@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import next from "next";
-import { Pacifico } from "next/font/google";
-const pacificofont = Pacifico({
+import { Satisfy } from "next/font/google";
+const satisfyfont = Satisfy({
   weight: '400',
   subsets: ["latin"],
-  display: 'fallback'
-
+  display: 'fallback',
 })
 const NextJsCarousel = () => {
   const images = [
@@ -47,8 +46,8 @@ const NextJsCarousel = () => {
         showThumbs={false}
         showStatus={false}
         showArrows={false}
-        autoPlay={true}
-        infiniteLoop={true}
+        autoPlay={false}
+        infiniteLoop={false}
         interval={3000}
         stopOnHover={true}
       >
@@ -57,7 +56,7 @@ const NextJsCarousel = () => {
             <img src={image.src} alt={`image${index + 1}`} height={500} />
             <div
               className={`legend ${index === selectedImageIndex ? "slide-active" : ""}`}>
-              <h3 className={pacificofont.className}>{image.heading}</h3>
+              <h3 className={satisfyfont.className}>{image.heading}</h3>
               <p>
                 {image.description}
               </p>

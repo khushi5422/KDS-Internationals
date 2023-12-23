@@ -15,22 +15,28 @@ import FadeBox from "@/components/fadebox";
 import NextJsCarousel from "@/components/carousel";
 import Parallax from "@/components/parallax";
 import Bestproducts from "@/components/bestproducts";
+import Roundbtn from "@/components/roundbtn";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      
+
       <NextJsCarousel />
-      <Bestproducts/>
-      <Parallax/>
+      <Bestproducts />
+      <div className="d-flex justify-content-around">
+        <Roundbtn />
+        <Roundbtn />
+        <Roundbtn />
+      </div>
+      <Parallax />
       <div className="mt-3">
         <LeftShadowCard />
       </div>
       <Row className="container mt-3">
         <Col>
-          <img src="slider2.jpg" alt="Avatar" className="rounded img-fluid" />
+          <img src="category.jpg" alt="Avatar" className="rounded img-fluid" />
         </Col>
         <Col className="d-flex flex-column justify-content-between">
           <Row>
@@ -68,7 +74,7 @@ export default function Home() {
         </Col>
       </Row>
       <div className="d-flex justify-content-center">
-        
+
         <FadeBox />
       </div>
     </>

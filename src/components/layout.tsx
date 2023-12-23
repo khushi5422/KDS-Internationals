@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Navigationbar from "./navbar";
+import Footer from "./footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -15,7 +16,8 @@ export default function Layout({ children }: LayoutProps) {
             "head head head"
             "content content content"
             "foot foot foot";
-          grid-template-rows: 55px auto 20px;
+          grid-template-rows: 86px auto 20px;
+          min-height: 90vh;
         }
         .headeer {
           grid-area: head;
@@ -35,7 +37,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="articlee">
           <main>{children}</main>{" "}
         </div>
-        <div className="footeer">{/* <Footer /> */}</div>
+        <div className="footeer"> <Footer /></div>
       </div>
     </>
   );

@@ -97,7 +97,7 @@ export default function index() {
         ></div>
       </div>
 
-      <div className={`${about.around} row mt-5`}>
+      <div className={`${about.around} row mt-5 mb-4`}>
         <div
           className={`${about.box} col-6`}
           data-aos="fade-left"
@@ -105,7 +105,7 @@ export default function index() {
           data-aos-delay="500"
         ></div>
         <div
-          className={`${about.widd} p-2 col-6`}
+          className={`${about.widd} p-2 col-6 `}
           data-aos="fade-right"
           data-aos-duration="1500"
           data-aos-delay="500"

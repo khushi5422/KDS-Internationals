@@ -79,3 +79,40 @@ body {
   text-align: center;
 
 }
+
+.accordionn {
+  display: flex;
+  height: 100vh;
+}
+
+.accordionn .item {
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  flex: 1;
+  transition: flex 400ms;
+}
+
+.accordionn .item:hover {
+  flex: 3;
+}
+
+.bg-barcelona {
+  background-image: url(https://images.unsplash.com/photo-1578912996078-305d92249aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=60);
+}
+
+.bg-sydney {
+  background-image: url(https://images.unsplash.com/photo-1524293581917-878a6d017c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80);
+}
+
+.bg-venice {
+  background-image: url(https://images.unsplash.com/photo-1453747063559-36695c8771bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=60);
+}
+
+.bg-singapore {
+  background-image: url(https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2555&q=80);
+}
+
+.bg-san-francisco {
+  background-image: url(https://images.unsplash.com/photo-1516675302207-722c37ce2f71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=60);
+}

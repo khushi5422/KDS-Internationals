@@ -16,6 +16,7 @@ import NextJsCarousel from "@/components/carousel";
 import Parallax from "@/components/parallax";
 import Bestproducts from "@/components/bestproducts";
 import Roundbtn from "@/components/roundbtn";
+import Accordian from "@/components/accordian";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,10 +32,11 @@ export default function Home() {
         <Roundbtn />
       </div>
       <Parallax />
-      <div className="mt-3">
+      <Accordian/>
+      {/* <div className="mt-3">
         <LeftShadowCard />
-      </div>
-      <Row className="container mt-3">
+      </div> */}
+      {/* <Row className="container mt-3">
         <Col>
           <img src="category.jpg" alt="Avatar" className="rounded img-fluid" />
         </Col>
@@ -76,7 +78,7 @@ export default function Home() {
       <div className="d-flex justify-content-center">
 
         <FadeBox />
-      </div>
+      </div> */}
     </>
   );
 }

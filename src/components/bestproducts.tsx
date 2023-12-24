@@ -22,7 +22,7 @@ export default function Bestproducts() {
                 <div className="">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                         <Row className="justify-content-center">
-                            <Col sm={4}>
+                            <Col sm={3}>
                                 <Nav variant="pills" className="flex-row mb-3 align-items-center justify-content-center">
                                     <Nav.Item>
                                         <Nav.Link className="rounded-pill" eventKey="first">Dried Seeds</Nav.Link>
@@ -32,26 +32,23 @@ export default function Bestproducts() {
                                     </Nav.Item>
                                 </Nav>
                             </Col>
-                            <Row sm={9}>
+                            <Row>
                                 <Tab.Content>
                                     <Tab.Pane eventKey="first">
                                         <div>
                                             <Row>
-                                                <Col>
+                                                <div className='col-md-3 mb-4'>
                                                     <GoldenCard />
-                                                </Col>
-                                                <Col>
+                                                </div>
+                                                <div className='col-md-3 mb-4'>
                                                     <GoldenCard />
-                                                </Col>
-                                                <Col>
+                                                </div>
+                                                <div className='col-md-3 mb-4'>
                                                     <GoldenCard />
-                                                </Col>
-                                                <Col>
+                                                </div>
+                                                <div className='col-md-3 mb-4'>
                                                     <GoldenCard />
-                                                </Col>
-                                                <Col>
-                                                    <GoldenCard />
-                                                </Col>
+                                                </div>
                                             </Row>
                                         </div>
                                     </Tab.Pane>

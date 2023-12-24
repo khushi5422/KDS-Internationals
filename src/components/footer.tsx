@@ -10,7 +10,7 @@ export default function Footer() {
                 {`
                 *{
                     margin:0;
-                    background :#101010;
+                    
                     color:white;
                     overflow-x:hidden !important;
                     font-family: 'Poppins', sans-serif;
@@ -126,7 +126,10 @@ export default function Footer() {
                                FOOTER
                 ****************************/
                 footer{
-                    background-color:var(--primary);
+                    background-image: url('footerimg.jpg');
+                    background-size: cover; /* Adjust to your preference */
+                    background-position: center center; /* Adjust to your preference */
+                    background-repeat: no-repeat;
                     color:var(--lite);
                     padding-bottom: 0px !important;
                 }
@@ -221,7 +224,9 @@ export default function Footer() {
                     width: 140px;
                     height: 70px;
                 }
-                
+                .bg{
+                    background-color: #00000073;
+                }
 
         
         `}
@@ -261,7 +266,7 @@ export default function Footer() {
 
                     </div>
                     <div>
-                        <section className="flex-content padding_1x text-center">
+                        <section className="flex-content padding_1x text-center bg">
                             <p>Copyright ©2020 All rights reserved || JK Exports</p>
                         </section>
                     </div>

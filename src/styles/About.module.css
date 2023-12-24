@@ -4,13 +4,22 @@
   }
 
   .box {
-    background: url(https://f8g8b9p5.rocketcdn.me/themes/goldsmith/wp-content/uploads/2022/12/background-4-768x512.webp),
-      lightgray 0px 0px / 100% 100% no-repeat;
+    position: relative;
+    
     box-shadow: 8px 8px 0px 0px #fac213;
     width: 39.71%;
     height: 40vh;
     max-width: 742.5px;
     transition: transform 0.3s ease-in-out;
+  } 
+  .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 8px 8px 0px 0px #fac213;
   }
   .containeer {
     width: 7%;

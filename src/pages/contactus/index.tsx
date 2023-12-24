@@ -29,8 +29,8 @@ const ContactFooorm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("DATTTTTTTTTAAAAAAAAAA:", formData);
-    
-// try {
+
+    // try {
     //   const response = await fetch("/api/dataSaver", {
     //     method: "POST",
     //     body: JSON.stringify(formData),
@@ -65,7 +65,7 @@ const ContactFooorm: React.FC = () => {
         );
     }
   };
-   
+
 
   return (
     <>
@@ -75,7 +75,7 @@ const ContactFooorm: React.FC = () => {
           width: 100%;
         }
         .bg{
-          background-color: orange
+          background-color: #ffa5009e
         }
         
         .row {
@@ -89,32 +89,35 @@ const ContactFooorm: React.FC = () => {
        
         .boxtop{
           display: flex;
-max-width: 17.8125rem;
-padding: 0rem 0.9375rem;
-flex-direction: column;
-align-items: flex-start;
-flex: 1 0 0;
+          max-width: 17.8125rem;
+          padding: 0rem 0.9375rem;
+          flex-direction: column;
+          align-items: flex-start;
+          flex: 1 0 0;
+        }
+        .boxtop:hover{
+          transform: scale(1.2);
         }
         .dbox{
           display: flex;
-width: 15.9375rem;
-flex-direction: column;
-align-items: center;
-gap: 1.1875rem;
-        }
-        .icon{
+          width: 15.9375rem;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.1875rem;
+          }
+          .icon{
           display: flex;
-height: 3.75rem;
-padding: 1.25rem 1.5175rem;
-justify-content: center;
-align-items: center;
-        }
-        .text{
+          height: 3.75rem;
+          padding: 1.25rem 1.5175rem;
+          justify-content: center;
+          align-items: center;
+          }
+          .text{
           display: flex;
-width: 15.9375rem;
-padding: 0rem 0.36313rem 0.03688rem 1.01188rem;
-flex-direction: column;
-align-items: center;
+          width: 15.9375rem;
+          padding: 0rem 0.36313rem 0.03688rem 1.01188rem;
+          flex-direction: column;
+          align-items: center;
         }
         @media only screen and (max-width: 426px) {
           .row {
@@ -130,7 +133,10 @@ align-items: center;
             <div className="row justify-content-center">
               <div className="col-md-12">
                 <div className="wrapper ">
-                  <div className="row no-gutters mb-5 bg  mt-5">
+                  <div className="row no-gutters mb-5 bg  mt-5"
+                    data-aos="flip-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div className="col-md-7">
                       <div className="contact-wrap w-100 p-md-5 p-4">
                         <h3 className="mb-4">Contact Us</h3>
@@ -281,7 +287,7 @@ align-items: center;
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                        <img src='location.svg' alt="location"/>
+                          <img src='location.svg' alt="location" />
                         </div>
                         <div className="text">
                           <p>
@@ -294,7 +300,7 @@ align-items: center;
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                         <img src='call.svg' alt="Phone Number"/>
+                          <img src='call.svg' alt="Phone Number" />
                         </div>
                         <div className="text">
                           <p>
@@ -307,13 +313,13 @@ align-items: center;
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                        <img src='mail.svg' alt="Mail Id"/>
+                          <img src='mail.svg' alt="Mail Id" />
                         </div>
                         <div className="text">
                           <p>
                             <span>Email:</span>{" "}
                             <a href="mailto:jkexports0220@gmail.com">
-                            jkexports0220@gmail.com
+                              jkexports0220@gmail.com
                             </a>
                           </p>
                         </div>
@@ -322,7 +328,7 @@ align-items: center;
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                        <img src='website.svg' alt="Website"/>
+                          <img src='website.svg' alt="Website" />
                         </div>
                         <div className="text">
                           <p>

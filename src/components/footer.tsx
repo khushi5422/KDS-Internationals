@@ -248,13 +248,9 @@ export default function Footer() {
                         </section>
                         <section className="flex-content padding_1x">
                             <h3>Get in touch</h3>
-                            <a href="#"><FaMapMarkerAlt color='orange' />Block No. 110, Nr.RMC,
-                                Opp. Harithar Mahadev Temple,
-                                Santej- Vadsar Road,
-                                At.- Santej, Tal.- Kalol,
-                                Dist. - Gandhinagr - 382721.</a>
-                            <a href="#"><BsFillTelephoneFill color='orange'/>+91 9512154200</a>
-                            <a href="#"><IoMdMail color='orange'/>jkexports0220@gmail.com</a>
+                            <a href="#"><FaMapMarkerAlt color='orange' /> Ahmedabad , India</a>
+                            <a href="#"><BsFillTelephoneFill color='orange'/> +91 9512154200</a>
+                            <a href="#"><IoMdMail color='orange'/> jkexports0220@gmail.com</a>
                             
                         </section>
                         <section className="flex-content padding_1x">

@@ -77,6 +77,10 @@ const ContactFooorm: React.FC = () => {
         .bg{
           background-color: #ffa5009e
         }
+        .imgfluidimg{
+          max-width: 100%;
+          height: 100%;
+        }
         
         .row {
           display: -webkit-box;
@@ -269,17 +273,8 @@ const ContactFooorm: React.FC = () => {
                         </form>
                       </div>
                     </div>
-                    <div className="col-md-5 d-flex align-items-stretch pe-0">
-                      <div id="map" className="w-100">
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.6935849343668!2d72.51338867510106!3d23.071692714493736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9cae72a11ff9%3A0x61f53a71c0a19197!2sScience%20City%2C%20Bhuyang%20Dev%2C%20Sola%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1693763615428!5m2!1sen!2sin"
-                          width="100%"
-                          height="100%"
-                          style={{ border: "0" }}
-                          // loading="lazy"
-                          referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                      </div>
+                    <div className="col-md-5 pe-0">
+                    <img src="fullspice.png" alt="Full Spices " className="imgfluidimg"/>
                     </div>
                   </div>
 
@@ -291,8 +286,7 @@ const ContactFooorm: React.FC = () => {
                         </div>
                         <div className="text">
                           <p>
-                            <span>Address:</span> 198 West 21th Street, Suite
-                            721 New York NY 10016
+                            <span>Address:</span> Ahmedabad , India
                           </p>
                         </div>
                       </div>

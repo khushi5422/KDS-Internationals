@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Navigationbar from "./navbar";
 import Footer from "./footer";
+import Navug from "./navig";
 
 interface LayoutProps {
   children: ReactNode;
@@ -31,7 +32,7 @@ export default function Layout({ children }: LayoutProps) {
       `}</style>
       <div className="maiin">
         <div className="headeer">
-          <Navigationbar />
+         <Navigationbar/>
         </div>
 
         <div className="articlee">

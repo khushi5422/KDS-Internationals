@@ -17,6 +17,7 @@ import Parallax from "@/components/parallax";
 import Bestproducts from "@/components/bestproducts";
 import Roundbtn from "@/components/roundbtn";
 import Accordian from "@/components/accordian";
+import Slider from "@/components/slider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,13 +27,14 @@ export default function Home() {
 
       <NextJsCarousel />
       <Bestproducts />
-      <div className="d-flex justify-content-around">
+      {/* <div className="d-flex justify-content-around">
         <Roundbtn />
         <Roundbtn />
         <Roundbtn />
-      </div>
+      </div> */}
       <Parallax />
-      <Accordian/>
+      <Slider/>
+      {/* <Accordian/> */}
       {/* <div className="mt-3">
         <LeftShadowCard />
       </div> */}
@@ -79,6 +81,5 @@ export default function Home() {
 
         <FadeBox />
       </div> */}
-    </>
-  );
+    </>  );
 }

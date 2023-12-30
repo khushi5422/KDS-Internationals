@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Caard() {
+export default function Caard(props :any) {
     return (
         <>
         <style>{`
@@ -9,7 +9,7 @@ export default function Caard() {
             display: flex;
             justify-content: center;
             align-items: start;
-            padding: 80px 32px;
+            padding: 50px 32px;
         }
          
         .articles {
@@ -28,7 +28,6 @@ export default function Caard() {
             display: block;
             transition: all 0.4s ease-in-out;
             overflow: hidden;
-            border-radius: 16px;
         }
         
         .articles article a {
@@ -55,6 +54,7 @@ export default function Caard() {
         .article-preview {
             padding: 24px;
             background: white;
+            overflow-wrap: anywhere;
         }
         
         .articles figure {
@@ -80,112 +80,39 @@ export default function Caard() {
                         <article className='sparkle u-hover--sparkle'>
                             <figure>
                                 <img
-                                    src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
-                                    alt="Preview"
+                                    src={props.img1}
+                                    alt={props.title1}
                                 />
                             </figure>
                             <div className="article-preview">
-                                <h2>Spice Type1</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    
-                                </p>
+                                <h2>{props.title1}</h2>
+                                <p>{props.description1}</p>
                             </div>
                         </article>
 
                         <article className='sparkle u-hover--sparkle'>
                             <figure>
                                 <img
-                                    src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
-                                    alt="Preview"
+                                    src={props.img2}
+                                    alt={props.title2}
                                 />
                             </figure>
                             <div className="article-preview">
-                                <h2>Spice Type1</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    
-                                </p>
+                            <h2>{props.title2}</h2>
+                                <p>{props.description2}</p>
                             </div>
                         </article>
 
                         <article className='sparkle u-hover--sparkle'>
                             <figure>
                                 <img
-                                    src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
-                                    alt="Preview"
+                                    src={props.img3}
+                                    alt={props.title3}
                                 />
                             </figure>
                             <div className="article-preview">
-                                <h2>Spice Type1</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    
-                                </p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <figure>
-                                <img
-                                    src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
-                                    alt="Preview"
-                                />
-                            </figure>
-                            <div className="article-preview">
-                                <h2>Spice Type1</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <img
-                                    src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
-                                    alt="Preview"
-                                />
-                            </figure>
-                            <div className="article-preview">
-                                <h2>Spice Type1</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <img
-                                    src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
-                                    alt="Preview"
-                                />
-                            </figure>
-                            <div className="article-preview">
-                                <h2>Spice Type1</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Praesent in mauris eu tortor porttitor accumsan.
-                                    
-                                </p>
+                            <h2>{props.title3}</h2>
+                                <p>{props.description3}</p>
                             </div>
                         </article>
                     </div>

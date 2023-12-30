@@ -30,7 +30,13 @@ const App = () => {
     // </>
     <>
       <div>
-        <Caard />
+        <Caard img1="blackcardemon.png" title1="Black Cardemon"
+         description1=" oreganoLoremipsumdolorsitametconsect etueradipiscingeliteruehnvwoeuhwrjngvrughvjrgneoiuivhnkjriuheu"
+          img2="cardemon.jpg" title2="Cardemom " 
+          description2=" oreganoLoremipsumdolorsitametconsect etueradipiscingeliteruehnvwoeuhwrjngvorughvjrgneoiuivhnkjriuheu"
+          img3="chillyflex.png" title3="Chilly Flex" 
+          description3=" oreganoLoremipsumdolorsitametconsect etueradipiscingeliteruehnvwoeuhwrjngvorughvjrgneoiuivhnkjriuheu."/>
+        
       </div>
     </>
   );

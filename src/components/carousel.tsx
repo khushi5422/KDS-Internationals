@@ -44,11 +44,11 @@ const NextJsCarousel = () => {
         selectedItem={selectedImageIndex}
         onChange={handleImageChange}
         showThumbs={false}
-        showStatus={false}
+        showStatus={true}
         showArrows={false}
-        autoPlay={false}
-        infiniteLoop={false}
-        interval={3000}
+        autoPlay={true}
+        infiniteLoop={true}
+        interval={2000}
         stopOnHover={true}
       >
         {images.map((image, index) => (
@@ -56,10 +56,10 @@ const NextJsCarousel = () => {
             <img src={image.src} alt={`image${index + 1}`} height={500} />
             <div
               className={`legend ${index === selectedImageIndex ? "slide-active" : ""}`}>
-              <h3 className={satisfyfont.className}>{image.heading}</h3>
-              <p>
+              <h1 className={satisfyfont.className}>{image.heading}</h1>
+              <h2>
                 {image.description}
-              </p>
+              </h2>
               {/* <div className="details">{image.details}</div> */}
               {/* <button className="btn btn-warning">More</button> */}
               <div className="indicators">

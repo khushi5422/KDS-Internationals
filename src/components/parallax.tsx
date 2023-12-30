@@ -6,7 +6,7 @@ export default function Parallax() {
     <>
       <div className={`${styles.parallaxContainer}`}>
         <div className={`${styles.parallax} mt-3`}></div>
-        <h2 className={`${styles.parallaxText}`}>Get 10% off On all Spicy & Herbs</h2>
+        <h1 className={`${styles.parallaxText}`}>Get the best Quality OF Spices </h1>
       </div>
 
     </>

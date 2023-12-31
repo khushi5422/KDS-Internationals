@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import Link from "next/link";
 interface FormData {
   cont_name: string;
   cont_company: string;
@@ -299,7 +300,7 @@ const ContactFooorm: React.FC = () => {
                         <div className="text">
                           <p>
                             <span>Phone:</span>{" "}
-                            <a href="tel://+91 9512154200">+91 9512154200</a>
+                            <Link href="tel://+91 9512154200">+91 9512154200</Link>
                           </p>
                         </div>
                       </div>

@@ -1,105 +1,164 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import Image from "next/image";
+import React, { useState } from "react";
 
-import React from 'react'
+import NavItem from "./navitem";
 
-export default function Navigationbar() {
-	//   useEffect(() => {
-	// 		document.addEventListener("DOMContentLoaded", function () {
 
-	// 			if (window.innerWidth > 992) {
+const MENU_LIST = [
+  { text: "Home", href: "/" },
+  { text: "About Us", href: "/aboutus" },
+  { text: "Gallery ", href: "/gallery" },
+  { text: "FAQ ", href: "/faq" },
+  { text: "Contact", href: "/contactus" },
+];
+const Navigationbar = () => {
+  const [navActive, setNavActive] = useState(false);
+  const [activeIdx, setActiveIdx] = useState(-1);
 
-	// 				document.querySelectorAll('.navbar .nav-item').forEach((everyitem) => {
+  return (
+    <>
+      <style>{`
+     .image_logo {
+       			width: 130px;
+      			height: 60px;
+       		  }
+    
+    `}</style>
+      <header>
+        <nav className={`nav`}>
+          <Link href={"/"}>
+            <img src="../../logo.png" alt="Loading.." className="image_logo" />
+          </Link>
+          <div
+            onClick={() => setNavActive(!navActive)}
+            className={`nav__menu-bar`}
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+            {MENU_LIST.map((menu, idx) => (
+              <div
+                onClick={() => {
+                  setActiveIdx(idx);
+                  setNavActive(false);
+                }}
+                key={menu.text}
+              >
+                <NavItem active={activeIdx === idx} {...menu} />
+              </div>
+            ))}
+          </div>
+        </nav>
+      </header>
+    </>
+  );
+};
 
-	// 					everyitem.addEventListener('mouseover', (e) => {
+export default Navigationbar;
 
-	// 						let el_link = this.querySelector('a[data-bs-toggle]');
+// 			
+// 							<div className="collapse navbar-collapse" id="main_nav">
+// 								<ul className="navbar-nav">
+// 									<li className="nav-item active">
+// 										<Link href="/" className="nav-link">
+// 											Home
+// 										</Link>
+// 									</li>
+// 									<li className="nav-item">
+// 										<Link href="aboutus" className="nav-link">
+// 											About
+// 										</Link>
+// 									</li>
+// 									<li className="nav-item">
+// 										<Link href="gallery" className="nav-link">
+// 											Gallery
+// 										</Link>
+// 									</li>
+// 									<li className="nav-item">
+// 										<Link href="faq" className="nav-link">
+// 											FAQ
+// 										</Link>
+// 									</li>
+// 									<li className="nav-item">
+// 										<Link href="contactus" className="nav-link">
+// 											Contact
+// 										</Link>
+// 									</li>
+// 								</ul>
+// 							</div>
+// 						</span>
+// 					</button>
+// 					<div className="collapse navbar-collapse" id="main_nav">
+// 						<ul className="navbar-nav">
+// 							<li className="nav-item active">
+// 								<Link href="/" className="nav-link">
+// 									Home
+// 								</Link>
+// 							</li>
+// 							<li className="nav-item">
+// 								<Link href="aboutus" className="nav-link">
+// 									About
+// 								</Link>
+// 							</li>
+// 							<li className="nav-item">
+// 								<Link href="gallery" className="nav-link">
+// 									Gallery
+// 								</Link>
+// 							</li>
+// 							<li className="nav-item">
+// 								<Link href="faq" className="nav-link">
+// 									FAQ
+// 								</Link>
+// 							</li>
+// 							<li className="nav-item">
+// 								<Link href="contactus" className="nav-link">
+// 									Contact
+// 								</Link>
+// 							</li>
+// 						</ul>
+// 					</div>
+// 				</div>
+// 			</nav>
+// 		</>
+// 	)
+// }
 
-	// 						if (el_link != null) {
-	// 							let nextEl = el_link.nextElementSibling;
-	// 							el_link.classList.add('show');
-	// 							nextEl?.classList.add('show');
-	// 						}
+//   useEffect(() => {
+// 		document.addEventListener("DOMContentLoaded", function () {
 
-	// 					});
-	// 					everyitem.addEventListener('mouseleave', (e) => {
-	// 						let el_link = this.querySelector('a[data-bs-toggle]');
+// 			if (window.innerWidth > 992) {
 
-	// 						if (el_link != null) {
-	// 							let nextEl = el_link.nextElementSibling;
-	// 							el_link.classList.remove('show');
-	// 							nextEl?.classList.remove('show');
-	// 						}
-	// 					})
-	// 				});
-	// 			}
-	// 			// end if innerWidth
-	// 		});
-	// 	}, []);
-	return (
-		<>
-			<style>{`
-	 .image_logo{
-		width: 130px;
-		height: 60px;
-	}
-	`}</style>
-			<nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-				<div className="container-fluid">
-					<Link className="navbar-brand" href="/">
-						<img src="../../logo.png" alt="Loading.." className="image_logo" />
-					</Link>
-					<button
-						className="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#main_nav"
-						aria-controls="main_nav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					<div className="collapse navbar-collapse" id="main_nav">
-						<ul className="navbar-nav">
-							<li className="nav-item active">
-								<Link className="nav-link" href="/">
-									Home
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href="aboutus">
-									About
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href="gallery">
-									Gallery
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href="faq">
-									FAQ
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href="contactus">
-									Contact
-								</Link>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			
+// 				document.querySelectorAll('.navbar .nav-item').forEach((everyitem) => {
 
-		</>
-	)
-}
+// 					everyitem.addEventListener('mouseover', (e) => {
+
+// 						let el_link = this.querySelector('a[data-bs-toggle]');
+
+// 						if (el_link != null) {
+// 							let nextEl = el_link.nextElementSibling;
+// 							el_link.classList.add('show');
+// 							nextEl?.classList.add('show');
+// 						}
+
+// 					});
+// 					everyitem.addEventListener('mouseleave', (e) => {
+// 						let el_link = this.querySelector('a[data-bs-toggle]');
+
+// 						if (el_link != null) {
+// 							let nextEl = el_link.nextElementSibling;
+// 							el_link.classList.remove('show');
+// 							nextEl?.classList.remove('show');
+// 						}
+// 					})
+// 				});
+// 			}
+// 			// end if innerWidth
+// 		});
+// 	}, []);
+
 
 {/* <li className="nav-item dropdown">
 		   <Link className="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </Link>

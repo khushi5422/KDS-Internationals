@@ -44,7 +44,7 @@ const NextJsCarousel = () => {
         selectedItem={selectedImageIndex}
         onChange={handleImageChange}
         showThumbs={false}
-        showStatus={true}
+        showStatus={false}
         showArrows={false}
         autoPlay={true}
         infiniteLoop={true}

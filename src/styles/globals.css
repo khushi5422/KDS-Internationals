@@ -2,22 +2,25 @@ body {
   background-color: aqua;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-p{
+/* p{
 	font-size: clamp(40px,8vw,105px);
-}
+} */
 a{
 	text-decoration: none !important;
 	color: rgb(255, 255, 255) !important;
 }
 
+.hideOverflowOnMobile {
+	overflow-x : hidden;
+	}
+	
 header{
 	position: sticky;
-	z-index: 30;
 	top: 0;
   }
   nav{
 	display: flex;
-	padding: 16px;
+	padding: 9px;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #000000;

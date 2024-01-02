@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import Link from "next/link";
+import Image from "next/image";
 interface FormData {
   cont_name: string;
   cont_company: string;
@@ -136,7 +138,7 @@ const ContactFooorm: React.FC = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-12">
-                <div className="wrapper ">
+                <div className="wrapper hideOverflowOnMobile">
                   <div className="row no-gutters mb-5 bg  mt-5"
                     data-aos="flip-up"
                     data-aos-easing="ease-out-cubic"
@@ -274,7 +276,12 @@ const ContactFooorm: React.FC = () => {
                       </div>
                     </div>
                     <div className="col-md-5 pe-0">
-                    <img src="fullspice.png" alt="Full Spices " className="imgfluidimg"/>
+                      <Image src="/fullspice.png" alt=" Error Message" width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                      {/* <img src="fullspice.png" alt="Full Spices " className="imgfluidimg" /> */}
                     </div>
                   </div>
 
@@ -299,7 +306,7 @@ const ContactFooorm: React.FC = () => {
                         <div className="text">
                           <p>
                             <span>Phone:</span>{" "}
-                            <a href="tel://+91 9512154200">+91 9512154200</a>
+                            <Link href="tel://+91 9512154200" className="text-dark">+91 9512154200</Link>
                           </p>
                         </div>
                       </div>
@@ -312,7 +319,7 @@ const ContactFooorm: React.FC = () => {
                         <div className="text">
                           <p>
                             <span>Email:</span>{" "}
-                            <a href="mailto:jkexports0220@gmail.com">
+                            <a href="mailto:jkexports0220@gmail.com" className="text-dark">
                               jkexports0220@gmail.com
                             </a>
                           </p>
@@ -326,7 +333,7 @@ const ContactFooorm: React.FC = () => {
                         </div>
                         <div className="text">
                           <p>
-                            <span>Website</span> <a href="#">yoursite.com</a>
+                            <span>Website</span> <a href="#" className="text-dark">yoursite.com</a>
                           </p>
                         </div>
                       </div>

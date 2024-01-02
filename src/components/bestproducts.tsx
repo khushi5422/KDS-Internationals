@@ -19,7 +19,7 @@ export default function Bestproducts() {
         <>
             <div className='mt-3' style={backgroundImageStyle}>
                 <h2 className='text-dark text-center'> Best Products</h2>
-                <h4 className='text-dark text-center mt-2'>Pellentesque massa placerat duis ultricies lacus sit sed.</h4>
+                <h4 className='text-dark text-center mt-2 p-1'>Pellentesque massa placerat duis ultricies lacus sit sed.</h4>
                 {/* <img src='stars.png' alt='star image' className='' /> */}
                 <div className="">
                     {/* <Tab.Container id="left-tabs-example" defaultActiveKey="first">

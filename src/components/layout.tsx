@@ -23,6 +23,7 @@ export default function Layout({ children }: LayoutProps) {
         }
         .headeer {
           grid-area: head;
+          background :black;
         }
         .articlee {
           grid-area: content;

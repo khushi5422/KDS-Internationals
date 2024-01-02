@@ -22,6 +22,11 @@
   transform: translate(-50%, -50%);
   color: #fff; /* Adjust the color as needed */
 }
+@media only screen and (max-width: 769px) {
+  .parallaxText {
+    left: 39%;
+  }
+}
 /* .overlay-lighten {
   filter: brightness(50%);
   height: 400px;

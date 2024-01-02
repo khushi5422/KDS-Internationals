@@ -10,7 +10,10 @@ a{
 	color: rgb(255, 255, 255) !important;
 }
 
-
+.hideOverflowOnMobile {
+	overflow-x : hidden;
+	}
+	
 header{
 	position: sticky;
 	top: 0;

@@ -12,18 +12,18 @@ export default function Owner() {
             <div className={`${styles.parallaxContainer}`}>
                 <div className={`${styles.parallaxCaaard} ${styles.parallaxowner} mt-3`}></div>
                 <div className={`${styles.parallaxCard}`}>
-                    <Card style={{ backgroundColor : '#ffffff82', minHeight: '320px'}} className='border-4 border-white '>
+                    <Card style={{ backgroundColor: '#ffffff82', minHeight: '320px' }} className='border-4 border-white '>
                         <Card.Body className='p-5'>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the cards content. Some quick example text to build on the card title and make up the
-                                bulk of the cards content. Some quick example text to build on the card title and make up the
-                                bulk of the cards content
+                                Indulge in the essence of India with JK Exports, where every spice tells a story of tradition and quality. As the proud owner, 
+                                I invite you on a global culinary journey. Our spices, handpicked for excellence, promise to transform your dishes into flavorful 
+                                masterpieces. Join us in celebrating the vibrant tapestry of tastes that only JK Exports can bring to your kitchen. Lets spice up your 
+                                world together!
                             </Card.Text>
                             <div className='d-flex gap-2 justify-content-center'>
-                            <Image src="/clove.png" width={80} height={80} className='roundedCircle' alt='Image' />
-                                <div style={{paddingLeft :'3vw'}}>
-                                    <h2>Nameeee</h2>
+                                <Image src="/owner.jpg" width={80} height={80} className='roundedCircle' alt='Image' />
+                                <div style={{ paddingLeft: '3vw' }}>
+                                    <h2>PRUTHVI PATEL</h2>
                                     <p>Owner</p>
                                 </div>
                             </div>

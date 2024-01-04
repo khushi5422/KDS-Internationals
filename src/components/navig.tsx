@@ -69,7 +69,7 @@ navbar?.addEventListener('click', (e) => {
     
       return (
         <nav className="navbar navbar-expand-custom navbar-mainbg">
-          <a className="navbar-brand navbar-logo" href="#">Navbar</a>
+          <Link className="navbar-brand navbar-logo" href="#">Navbar</Link>
           <button className="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i className="fas fa-bars text-white"></i>
           </button>

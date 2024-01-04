@@ -53,7 +53,7 @@ const SquareImageCarousel = () => {
                 className="square-image"
               />
               <Image
-                src="/cardemon.jpg"
+                src="driedchillies.png"
                 alt="Image 3"
                 className="square-image"
               />
@@ -68,7 +68,7 @@ const SquareImageCarousel = () => {
                 className="square-image"
               />
               <Image
-                src="/cardemon.jpg"
+                src="driedchillies.png"
                 alt="Image 3"
                 className="square-image"
               />
@@ -87,7 +87,22 @@ const SquareImageCarousel = () => {
                 className="square-image"
               />
               <Image
-                src="/cardemon.jpg"
+                src="driedchillies.png"
+                alt="Image 3"
+                className="square-image"
+              />
+            <Image
+                src="/chillyflex.png"
+                alt="Image 1"
+                className="square-image"
+              />
+              <Image
+                src="/blackcardemon.png"
+                alt="Image 2"
+                className="square-image"
+              />
+              <Image
+                src="driedchillies.png"
                 alt="Image 3"
                 className="square-image"
               />

@@ -47,8 +47,9 @@
   font-size: calc(32px, 10 vw, 56px);
 }
 .grey {
-  width: 70%;
+  width: 90%;
   color: gray;
+  font-size: larger;
 }
 @media (max-width: 768px) {
   .grey {

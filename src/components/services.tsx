@@ -18,27 +18,35 @@ export default function Services() {
             padding: 0;
     text-align: center;
         }
+        .fonn{
+            font-size: medium;
+        }
         @media only screen and (max-width: 769px) {
             .mobile{
                 flex-direction: column;
+            }
+            .fonn{
+                font-size: x-small;
             }
           }
         
         `}</style>
             <div className={`${styles.parallaxContainer}`}>
-                <div className={`${styles.parallaxCaaard} mt-3`}></div>
-                <div className={`${styles.parallaxCard}`}>
+                <div className={`${styles.parallaxCaaardService} mt-3`}></div>
+                <div className={`${styles.parallaxCardService}`}>
                     <div className='d-flex mobile'>
                         <Card className=' car  border-5 border-dark rounded-0 d-flex align-items-center'
                          data-aos="zoom-in-right"
                             data-aos-duration="1000"
                             data-aos-once="true"
                             >
-                            <Image src="/truck.webp" width={90} height={90} className='' alt='Image' />
+                            <Image src="/qualityassurance.webp" width={90} height={90} className='' alt='Image' />
                             <Card.Body className='cbody'>
-                                <Card.Title className='text-center'>Export</Card.Title>
-                                <Card.Text style={{ fontSize: 'medium' }}>
-                                    We export finest quality of dehydrated products, Maize, peanuts and other products with superlative value to the international market
+                                <Card.Title className='text-center'>Quality Assurance</Card.Title>
+                                <Card.Text className='fonn'>
+                                Experience the assurance of quality with our meticulously sourced and curated spices. We guarantee that each product meets the
+                                 highest industry standards, ensuring consistency and excellence in every batch. Your satisfaction is our priority, and our 
+                                 commitment to quality is unwavering.
                                 </Card.Text>
                             </Card.Body>
                         </Card >
@@ -49,9 +57,11 @@ export default function Services() {
                         >
                             <Image src="/truck.webp" width={90} height={90} className='' alt='Image' />
                             <Card.Body className='cbody'>
-                                <Card.Title className='text-center'>Export</Card.Title>
-                                <Card.Text style={{ fontSize: 'medium' }}>
-                                    We export finest quality of dehydrated products, Maize, peanuts and other products with superlative value to the international market
+                                <Card.Title className='text-center'>Bulk Ordering Made Easy</Card.Title>
+                                <Card.Text className='fonn'>
+                                Simplify your sourcing process with our seamless bulk ordering services. As your trusted wholesaler, we offer a hassle-free experience 
+                                for large quantities. Whether youre a restaurant, distributor, or retailer, our streamlined ordering system ensures efficiency, prompt 
+                                delivery, and the best value for your bulk spice needs.
                                 </Card.Text>
                             </Card.Body>
                         </Card >
@@ -61,11 +71,13 @@ export default function Services() {
                         data-aos-once="true"
                         
                         >
-                            <Image src="/truck.webp" width={90} height={90} className='' alt='Image' />
+                            <Image src="/global.webp" width={90} height={90} className='' alt='Image' />
                             <Card.Body className='cbody'>
-                                <Card.Title className='text-center'>Export</Card.Title>
-                                <Card.Text style={{ fontSize: 'medium' }}>
-                                    We export finest quality of dehydrated products, Maize, peanuts and other products with superlative value to the international market
+                                <Card.Title className='text-center'>Global Distribution Network</Card.Title>
+                                <Card.Text className='fonn'>
+                                Connect with a global spice partner! Our extensive distribution network enables us to serve clients worldwide. Benefit from our 
+                                efficient logistics and timely deliveries. As your reliable wholesaler, we strive to make the sourcing of premium Indian spices a 
+                                smooth and reliable experience, no matter where you are.
                                 </Card.Text>
                             </Card.Body>
                         </Card >

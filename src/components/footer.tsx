@@ -3,6 +3,7 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
 import { MdFiberManualRecord } from 'react-icons/md';
 import React from 'react';
+import Link from 'next/link';
 export default function Footer() {
     return (
         <>
@@ -242,23 +243,24 @@ export default function Footer() {
                         </section>
                         <section className="flex-content padding_1x">
                             <h3>Products</h3>
-                            <a href="#">Dried Spices</a>
-                            <a href="#">Spicy Masalas</a>
-                            <a href="#"> Spice Seeds</a>
-                            <a href="#">Powdered Spices</a>
+                            <Link href="/gallery">Dried Spices</Link>
+                            <Link href="/gallery">Spicy Masalas</Link>
+                            <Link href="/gallery"> Spice Seeds</Link>
+                            <Link href="/gallery">Powdered Spices</Link>
                         </section>
                         <section className="flex-content padding_1x">
                             <h3>Get in touch</h3>
-                            <a href="#"><FaMapMarkerAlt color='orange' /> Ahmedabad , India</a>
-                            <a href="#"><BsFillTelephoneFill color='orange'/> +91 9512154200</a>
-                            <a href="#"><IoMdMail color='orange'/> jkexports0220@gmail.com</a>
+                            <Link href="#"><FaMapMarkerAlt color='orange' /> Ahmedabad , India</Link>
+                            <Link href="tel://+91 9512154200"><BsFillTelephoneFill color='orange'/> +91 9512154200</Link>
+                            <Link href="mailto:jkexports0220@gmail.com"><IoMdMail color='orange'/> jkexports0220@gmail.com</Link>
                             
                         </section>
                         <section className="flex-content padding_1x">
-                            <h3>Who We Are</h3>
-                            <a href="#"><MdFiberManualRecord  color='orange'/>Research</a>
-                            <a href="#"><MdFiberManualRecord  color='orange'/>Experts</a>
-                            <a href="#"><MdFiberManualRecord  color='orange'/>Agencies</a>
+                            <h3>Quick Links</h3>
+                            <Link href="/"><MdFiberManualRecord  color='orange'/>Home</Link>
+                            <Link href="/aboutus"><MdFiberManualRecord  color='orange'/>About Us</Link>
+                            <Link href="/gallery"><MdFiberManualRecord  color='orange'/>Gallery</Link>
+                            <Link href="/contactus"><MdFiberManualRecord  color='orange'/>Contact</Link>
                         </section>
 
                     </div>

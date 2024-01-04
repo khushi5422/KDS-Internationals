@@ -126,11 +126,12 @@ export default function Footer() {
                                FOOTER
                 ****************************/
                 footer{
-                    background-image: url('footerimg.jpg');
-                    background-size: cover; /* Adjust to your preference */
-                    background-position: center center; /* Adjust to your preference */
-                    background-repeat: no-repeat;
-                    color:var(--lite);
+                    // background-image: url('footerimg.jpg');
+                    // background-size: cover; /* Adjust to your preference */
+                    // background-position: center center; /* Adjust to your preference */
+                    // background-repeat: no-repeat;
+                    // color:var(--lite);
+                    background-color: #182933;
                     padding-bottom: 0px !important;
                 }
                 
@@ -221,8 +222,7 @@ export default function Footer() {
                 }
                 
                 .image_logo{
-                    width: 140px;
-                    height: 70px;
+                    width: 21%;
                 }
                 .bg{
                     background-color: #00000073;
@@ -232,11 +232,12 @@ export default function Footer() {
         `}
             </style>
             <div>
-                <footer className="padding_4x">
+                <footer className="padding_2x">
                     <div className="flex">
                         <section className="flex-content padding_1x">
                             <img src='../../logo.png' alt='Loading..' className='image_logo'></img>
-                            <p className="mt-4">JK Exports are a new edge od spice exporter who deliveres world best spice from heart of India
+                            <p className="mt-4">JK Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
+                            We at JKExport having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
                                 </p>
                         </section>
                         <section className="flex-content padding_1x">

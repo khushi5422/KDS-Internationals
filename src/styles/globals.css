@@ -5,25 +5,42 @@ body {
 /* p{
 	font-size: clamp(40px,8vw,105px);
 } */
-a{
-	text-decoration: none !important;
-	color: rgb(255, 255, 255) !important;
+a {
+  text-decoration: none !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .hideOverflowOnMobile {
-	overflow-x : hidden;
-	}
-	
-header{
-	position: sticky;
-	top: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
   }
-  nav{
+
+  .navbar-toggler {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler-icon {
+    order: -1; /* Move the toggle icon to the left */
+  }
+}
+
+/* nav{
 	display: flex;
 	padding: 9px;
+	/* padding-left: 9px !important; 
 	justify-content: space-between;
 	align-items: center;
-	background-color: #000000;
+	background-color:#182933;
 	
   }
   .nav__menu-bar{
@@ -40,6 +57,7 @@ header{
   }
   .nav__menu-list{
 	display: flex;
+	z-index: 1000;
 	flex-direction: column;
 	position: fixed;
 	top: 60px;
@@ -49,7 +67,7 @@ header{
 	padding: 24px 16px;
 	transition: all 0.2s;
 	min-height: calc(100vh - 60px);
-	background-color: #000000;
+	background-color: #182933;
 	color: white;
   }
   .nav__menu-list.active{
@@ -77,6 +95,7 @@ header{
 	  display: none;
 	}
 	.nav__menu-list{
+	  z-index: 1000;
 	  position: unset;
 	  flex-direction: row;
 	  min-height: fit-content;
@@ -91,14 +110,14 @@ header{
 	  height: 6px;
 	  bottom: -16px;
 	  left: 0;
-	  background-color: black;
+	  background-color:#182933;
 	  transition: all 0.2s;
 	}
 	
 	.nav__link:hover:before{
 	 width: 100%;
 	}
-  }
+  } */
 
 /* .fontsizexxxlarge{
   font-size: xx-large;
@@ -130,6 +149,7 @@ header{
   box-sizing: border-box;
   position: relative;
   padding: 0.45em;
+  background-color: #182933b3;
   &::before,
   &::after {
     content: "";
@@ -165,6 +185,7 @@ header{
   /* transition: all .5s ease-in-out; */
   position: absolute;
   /* left: 46%; */
+  height: 60%;
   margin-left: -15%;
   width: 40%;
   top: 40%;
@@ -174,7 +195,6 @@ header{
   opacity: 1;
   font-size: 12px;
   text-align: center;
-
 }
 
 .accordionn {
@@ -213,7 +233,6 @@ header{
 .bg-san-francisco {
   background-image: url(https://images.unsplash.com/photo-1516675302207-722c37ce2f71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=60);
 }
-
 
 /* body{
 	font-family: 'Roboto', sans-serif;

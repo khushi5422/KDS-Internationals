@@ -39,6 +39,12 @@ const NextJsCarousel = () => {
 
   return (
     <>
+    <style>{`
+   .hei{
+    height :100vh;
+    width : 100vw;
+   }
+    `}</style>
       <Carousel
         className="custom"
         selectedItem={selectedImageIndex}
@@ -53,7 +59,7 @@ const NextJsCarousel = () => {
       >
         {images.map((image, index) => (
           <div key={index} className="override carousel-slide">
-            <img src={image.src} alt={`image${index + 1}`} height={500} />
+            <img src={image.src} alt={`image${index + 1}`} height={0} className="hei"/>
             <div
               className={`legend ${index === selectedImageIndex ? "slide-active" : ""}`}>
               <h1 className={satisfyfont.className}>{image.heading}</h1>

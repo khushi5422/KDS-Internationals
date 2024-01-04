@@ -22,11 +22,45 @@
   transform: translate(-50%, -50%);
   color: #fff; /* Adjust the color as needed */
 }
+
 @media only screen and (max-width: 769px) {
   .parallaxText {
     left: 39%;
   }
 }
+.parallaxCaaard {
+  min-height: 510px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("~/public/slider2.jpg");
+}
+.parallaxCaaardService {
+  min-height: 510px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("~/public/slider2.jpg");
+}
+
+@media only screen and (max-width: 769px) {
+  .parallaxCaaard {
+    min-height: 1000px;
+  }
+  .parallaxowner {
+    min-height: 630px;
+  }
+}
+.parallaxCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Adjust the color as needed */
+}
+
 /* .overlay-lighten {
   filter: brightness(50%);
   height: 400px;

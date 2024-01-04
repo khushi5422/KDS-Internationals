@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavItem from "./navitem";
 
@@ -19,19 +21,29 @@ const Navigationbar = () => {
   return (
     <>
       <style>{`
-     .image_logo {
-      width: 135px;
-      height: 72px;
+      .bg{
+        background-color :#182933;
+        z-index :1000;
       }
-
-      @media (max-width: 768px) {
-      .image_logo {
-       height: 76px;
+     .logo {
+      width: 6%; /* Adjust the width as needed */
+      height: auto;
+      
+    }
+    @media (max-width: 768px) {
+      .wid{
+        width:72%;
+      }
+      .logo{
+        width :15% ;
+        margin-left: 3vw;
       }
     }
     
+    
+    
     `}</style>
-      <header>
+      {/* <header>
         <nav className={`nav`}>
           <Link href={"/"}>
             <img src="../../logo.png" alt="Loading.." className="image_logo" />
@@ -58,7 +70,29 @@ const Navigationbar = () => {
             ))}
           </div>
         </nav>
-      </header>
+      </header> */}
+      <Navbar className="bg" variant="dark" expand="lg">
+      {/* fixed="top" */}
+      <Container className="ps-0">
+        <Navbar.Brand href="#" className="wid">
+          <img
+            src="../../logo.png"
+            alt="Logo"
+            className="logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Collapse id="navbar-nav" className="justify-content-end">
+          <Nav>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/aboutus">About</Nav.Link>
+            <Nav.Link href="/gallery">Gallery</Nav.Link>
+            <Nav.Link href="/contactus">Contact</Nav.Link>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     </>
   );
 };

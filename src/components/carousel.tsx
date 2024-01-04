@@ -14,19 +14,24 @@ const NextJsCarousel = () => {
     {
       src: "slider1.webp",
       heading: " Herbs And Spices ",
-      description: "This is the first image description.",
 
     },
     {
       src: "slider2.jpg",
       heading: "The Choice Of Chefs",
-      description: "This is the second image description.",
+
 
     },
     {
       src: "slider3.jpg",
       heading: " All Organic Spices...",
-      description: "This is the third image description.",
+
+
+    },
+    {
+      src: "slider4.jpg",
+      heading: "We Provide Reliable & Fast Delivery",
+
 
     }
   ];
@@ -39,13 +44,39 @@ const NextJsCarousel = () => {
 
   return (
     <>
-    <style>{`
+      <style>{`
    .hei{
     height :100vh;
     width : 100vw;
    }
     `}</style>
       <Carousel
+  className="custom"
+  selectedItem={selectedImageIndex}
+  onChange={handleImageChange}
+  showThumbs={false}
+  showStatus={false}
+  showArrows={false}
+  autoPlay={false}
+  infiniteLoop={true}
+  interval={2000}
+  stopOnHover={true}
+>
+  {images.map((image, index) => (
+    <div key={index} className={`override carousel-slide slide${index + 1}`}>
+      <img src={image.src} alt={`image${index + 1}`} height={0} className="hei" />
+      <div
+        className={`legend animated ${index === selectedImageIndex ? "slide-active" : ""}`}
+        style={{ animationDelay: `${index * 0.5}s`, animationDuration: '2000ms' }}
+      >
+        <h1 className={satisfyfont.className}>{image.heading}</h1>
+        {/* ... rest of your legend content */}
+      </div>
+    </div>
+  ))}
+</Carousel>
+
+      {/* <Carousel
         className="custom"
         selectedItem={selectedImageIndex}
         onChange={handleImageChange}
@@ -54,20 +85,17 @@ const NextJsCarousel = () => {
         showArrows={false}
         autoPlay={true}
         infiniteLoop={true}
-        interval={2000}
+        interval={4000}
         stopOnHover={true}
       >
         {images.map((image, index) => (
-          <div key={index} className="override carousel-slide">
+          <div key={index} className={`override carousel-slide slide${index + 1}`}>
             <img src={image.src} alt={`image${index + 1}`} height={0} className="hei"/>
             <div
-              className={`legend ${index === selectedImageIndex ? "slide-active" : ""}`}>
+              className={`legend ${index === selectedImageIndex ? "slide-active" : ""} animated`}>
               <h1 className={satisfyfont.className}>{image.heading}</h1>
-              <h2>
-                {image.description}
-              </h2>
               {/* <div className="details">{image.details}</div> */}
-              {/* <button className="btn btn-warning">More</button> */}
+      {/* <button className="btn btn-warning">More</button> 
               <div className="indicators">
                 {images.map((_, i) => (
                   <span
@@ -87,7 +115,7 @@ const NextJsCarousel = () => {
             </div>
           </div>
         ))}
-      </Carousel>
+      </Carousel> */}
     </>
   );
 };

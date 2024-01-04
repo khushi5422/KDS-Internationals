@@ -320,9 +320,9 @@ const ContactFooorm: React.FC = () => {
                         <div className="text">
                           <p>
                             <span>Email:</span>{" "}
-                            <a href="mailto:jkexports0220@gmail.com" className="text-dark">
+                            <Link href="mailto:jkexports0220@gmail.com" className="text-dark">
                               jkexports0220@gmail.com
-                            </a>
+                            </Link>
                           </p>
                         </div>
                       </div>
@@ -334,7 +334,7 @@ const ContactFooorm: React.FC = () => {
                         </div>
                         <div className="text">
                           <p>
-                            <span>Website</span> <a href="#" className="text-dark">yoursite.com</a>
+                            <span>Website</span> <Link href="#" className="text-dark">yoursite.com</Link>
                           </p>
                         </div>
                       </div>

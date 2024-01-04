@@ -4,7 +4,7 @@ import about from "@/styles/About.module.css";
 export default function index() {
   return (
     <>
-      <div className={`${about.around} row mt-5 hideOverflowOnMobile`}>
+      <div className={`${about.around} row mt-5 `}>
         <div
           className={`${about.box} col-6 `}
           data-aos="zoom-in-left"
@@ -32,7 +32,7 @@ export default function index() {
          
         </div>
       </div>
-      <div className={`${about.around} row mt-5 hideOverflowOnMobile`}>
+      <div className={`${about.around} row mt-5 `}>
         <div
           className={`${about.widd} p-2 col-6 `}
           data-aos="zoom-in-right"
@@ -60,7 +60,7 @@ export default function index() {
         ></div>
       </div>
 
-      <div className={`${about.around} row mt-5 mb-4 hideOverflowOnMobile`}>
+      <div className={`${about.around} row mt-5 mb-4 `}>
         <div
           className={`${about.box} col-6 `}
           data-aos="zoom-in-left"

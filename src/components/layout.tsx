@@ -18,26 +18,32 @@ export default function Layout({ children }: LayoutProps) {
             "head head head"
             "content content content"
             "foot foot foot";
-          grid-template-rows: 86px auto 20px;
+          grid-template-rows: 71px auto 20px;
           min-height: 90vh;
         }
         .headeer {
           grid-area: head;
-          background :black;
         }
         .articlee {
           grid-area: content;
+          position: relative;
+  z-index: 1;
         }
         .footeer {
           grid-area: foot;
         }
+        @media (max-width: 768px) {
+          .maiin {
+            grid-template-rows: 65px auto 20px;
+          }
+        }
       `}</style>
       <div className="maiin">
         <div className="headeer">
-         <Navigationbar/>
+          <Navigationbar />
         </div>
 
-        <div className="articlee">
+        <div className="articlee hideOverflowOnMobile">
           <main>{children}</main>{" "}
         </div>
         <div className="footeer"> <Footer /></div>

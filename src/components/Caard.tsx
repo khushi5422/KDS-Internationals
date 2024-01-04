@@ -19,6 +19,7 @@ export default function Caard(props :any) {
             justify-content: center;
             max-width: 1200px;
             gap: 24px;
+            
         }
          
         .articles article {
@@ -40,7 +41,7 @@ export default function Caard(props :any) {
         .articles article h2 {
             margin: 0 0 18px 0;
             font-size: 1.6rem;
-            color: var(--secondary);
+            color: white;
             transition: color 0.3s ease-out;
         }
           
@@ -53,7 +54,6 @@ export default function Caard(props :any) {
           
         .article-preview {
             padding: 24px;
-            background: white;
             overflow-wrap: anywhere;
         }
         

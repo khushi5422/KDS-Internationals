@@ -9,10 +9,10 @@ import Caard from './Caard';
 
 export default function Bestproducts() {
     const backgroundImageStyle = {
-        backgroundImage: `url("/productsectionbg.webp")`,
+        // backgroundImage: `url("/productsectionbg.webp")`,
         backgroundSize: "cover", // Add other background styles if needed
         minHeight: "96vh", // Set a minimum height for visibility
-        color: "#fff", // Text color
+        color: "#182933", // Text color
 
     };
     return (

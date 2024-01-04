@@ -76,8 +76,8 @@ const ContactFooorm: React.FC = () => {
         .wrapper{
           width: 100%;
         }
-        .bg{
-          background-color: #ffa5009e
+        .backg{
+          background-color: #182933
         }
         .imgfluidimg{
           max-width: 100%;
@@ -102,7 +102,7 @@ const ContactFooorm: React.FC = () => {
           flex: 1 0 0;
         }
         .boxtop:hover{
-          transform: scale(1.2);
+          // transform: scale(1.2);
         }
         .dbox{
           display: flex;
@@ -138,14 +138,15 @@ const ContactFooorm: React.FC = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-12">
-                <div className="wrapper hideOverflowOnMobile">
-                  <div className="row no-gutters mb-5 bg  mt-5"
+                <div className="wrapper ">
+                  <div className="row no-gutters mb-5 backg  mt-5"
                     data-aos="flip-up"
                     data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
+                    data-aos-duration="2000"
+                    data-aos-once="true">
                     <div className="col-md-7">
                       <div className="contact-wrap w-100 p-md-5 p-4">
-                        <h3 className="mb-4">Contact Us</h3>
+                        <h3 className="mb-4 text-white">Contact Us</h3>
                         <div
                           className="position-fixed bottom-0 end-0 p-3"
                           style={{ zIndex: 11 }}
@@ -266,7 +267,7 @@ const ContactFooorm: React.FC = () => {
                                   id="liveToastBtn"
                                   type="submit"
                                   value="Send Message"
-                                  className="btn btn-primary "
+                                  className="btn btn-warning "
                                 />
                                 <div className="submitting"></div>
                               </div>

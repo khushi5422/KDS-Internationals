@@ -18,6 +18,10 @@ import Bestproducts from "@/components/bestproducts";
 import Roundbtn from "@/components/roundbtn";
 import Accordian from "@/components/accordian";
 import Slider from "@/components/slider";
+import Owner from "@/components/owner";
+import Services from "@/components/services";
+import AboutUs from "@/components/aboutus";
+import SquareImageCarousel from "@/components/squareslider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,60 +30,12 @@ export default function Home() {
     <>
 
       <NextJsCarousel />
+      <AboutUs/>
+      <SquareImageCarousel/>
+      <Services/>
       <Bestproducts />
-      {/* <div className="d-flex justify-content-around">
-        <Roundbtn />
-        <Roundbtn />
-        <Roundbtn />
-      </div> */}
       <Parallax />
       <Slider/>
-      {/* <Accordian/> */}
-      {/* <div className="mt-3">
-        <LeftShadowCard />
-      </div> */}
-      {/* <Row className="container mt-3">
-        <Col>
-          <img src="category.jpg" alt="Avatar" className="rounded img-fluid" />
-        </Col>
-        <Col className="d-flex flex-column justify-content-between">
-          <Row>
-            <Col>
-              <img
-                src="slider2.jpg"
-                alt="Avatar"
-                className="rounded img-fluid"
-              />
-            </Col>
-            <Col>
-              <img
-                src="slider2.jpg"
-                alt="Avatar"
-                className="rounded img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <img
-                src="slider2.jpg"
-                alt="Avatar"
-                className="rounded img-fluid"
-              />
-            </Col>
-            <Col>
-              <img
-                src="slider2.jpg"
-                alt="Avatar"
-                className="rounded img-fluid"
-              />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-      <div className="d-flex justify-content-center">
-
-        <FadeBox />
-      </div> */}
+      <Owner/>
     </>  );
 }

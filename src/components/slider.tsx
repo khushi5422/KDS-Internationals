@@ -34,6 +34,7 @@ export default function Slider() {
                   src={imageUrl}
                   alt={`image${index + 1}`} height={300}
                 />
+                <div>Names</div>
               </div>
             </>
           ))}

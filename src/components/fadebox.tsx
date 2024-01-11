@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function FadeBox() {
@@ -66,7 +67,7 @@ export default function FadeBox() {
      `}</style>
       <div className="effect11">
         <img src="slider3.jpg" />
-        <a href="#">Fenugreek</a>
+        <Link href="#">Fenugreek</Link>
       </div>
     </>
   );

@@ -221,9 +221,13 @@ export default function Footer() {
                         flex:1 1 100%;
                     }
                 }
-                
+                @media (max-width:767px){
+                    small {
+                        font-size: small
+                    }
+                }
                 .image_logo{
-                    width: 21%;
+                    width: 10vw;
                 }
                 .bg{
                     background-color: #00000073;
@@ -237,30 +241,36 @@ export default function Footer() {
                     <div className="flex">
                         <section className="flex-content padding_1x">
                             <img src='../../logo.png' alt='Loading..' className='image_logo'></img>
-                            <p className="mt-4">JK Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
+                            <p className="mt-2">JK Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
                             We at JKExport having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
                                 </p>
                         </section>
                         <section className="flex-content padding_1x">
                             <h3>Products</h3>
-                            <Link href="/gallery">Dried Spices</Link>
-                            <Link href="/gallery">Spicy Masalas</Link>
-                            <Link href="/gallery"> Spice Seeds</Link>
-                            <Link href="/gallery">Powdered Spices</Link>
+                            <div className='p-0 m-0 d-flex flex-column'>
+                            <Link href="/gallery" className='small'>Dried Spices</Link>
+                            <Link href="/gallery" className='small'>Spicy Masalas</Link>
+                            <Link href="/gallery" className='small'> Spice Seeds</Link>
+                            <Link href="/gallery" className='small'>Powdered Spices</Link>
+                            </div>
                         </section>
                         <section className="flex-content padding_1x">
                             <h3>Get in touch</h3>
-                            <Link href="#"><FaMapMarkerAlt color='orange' /> Ahmedabad , India</Link>
-                            <Link href="tel://+91 9512154200"><BsFillTelephoneFill color='orange'/> +91 9512154200</Link>
-                            <Link href="mailto:jkexports0220@gmail.com"><IoMdMail color='orange'/> jkexports0220@gmail.com</Link>
+                            <div className='p-0 m-0 d-flex flex-column'>
+                            <Link href="#" className='small'><FaMapMarkerAlt color='orange'/> Ahmedabad , India</Link>
+                            <Link href="tel://+91 9512154200" className='small'><BsFillTelephoneFill color='orange'/> +91 9512154200</Link> 
+                            <Link href="mailto:jkexports0220@gmail.com" className='small'><IoMdMail color='orange'/> jkexports0220@gmail.com</Link>
+                            </div>
                             
                         </section>
                         <section className="flex-content padding_1x">
                             <h3>Quick Links</h3>
-                            <Link href="/"><MdFiberManualRecord  color='orange'/>Home</Link>
-                            <Link href="/aboutus"><MdFiberManualRecord  color='orange'/>About Us</Link>
-                            <Link href="/gallery"><MdFiberManualRecord  color='orange'/>Gallery</Link>
-                            <Link href="/contactus"><MdFiberManualRecord  color='orange'/>Contact</Link>
+                            <div className='p-0 m-0 d-flex flex-column'>
+                            <Link href="/" className='small'><MdFiberManualRecord  color='orange'/>Home</Link>
+                            <Link href="/aboutus" className='small'><MdFiberManualRecord  color='orange'/>About Us</Link>
+                            <Link href="/gallery" className='small'><MdFiberManualRecord  color='orange'/>Gallery</Link>
+                            <Link href="/contactus" className='small'><MdFiberManualRecord  color='orange'/>Contact</Link>
+                            </div>
                         </section>
 
                     </div>

@@ -1,7 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from "mongodb";
 
-const DATABASE_URI = "mongodb+srv://second_user:ChzflVc2kQLyoZKO@cluster0.z4r3to1.mongodb.net/inquiry_details?retryWrites=true&w=majority";
+const DATABASE_URI = "mongodb+srv://dbuser:Khushi@5422@cluster0.9bvmnjo.mongodb.net/inquirydetails?retryWrites=true&w=majority";
+const client = new MongoClient(DATABASE_URI);
 
 interface InquiryData {
   name: string;
@@ -16,16 +17,15 @@ export default async function DataSaver(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    let client: MongoClient | null = null; // Initialize client
+    // let client: MongoClient | null = null; // Initialize client
 
     try {
-      const data: InquiryData = req.body;
-
-      client = new MongoClient(DATABASE_URI);
       await client.connect();
 
+      const data: InquiryData = req.body;
+
       const db = client.db();
-      const inquiryCollections = db.collection("inquiry_details");
+      const inquiryCollections = db.collection("inquirydetails");
 
       const result = await inquiryCollections.insertOne(data);
       console.log(result);
@@ -35,9 +35,7 @@ export default async function DataSaver(
       console.error(error);
       res.status(500).json({ message: "Internal Server Error" });
     } finally {
-      if (client) {
-        client.close(); // Close client connection if it was successfully established
-      }
+      await client.close();
     }
   } else {
     res.status(405).json({ message: "Method Not Allowed" });

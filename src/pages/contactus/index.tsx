@@ -11,6 +11,8 @@ interface FormData {
 }
 const ContactFooorm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [erroroccured, seterroroccured] = useState(false);
 
   //DATABASE
   const [formData, setFormData] = useState<FormData>({
@@ -32,20 +34,22 @@ const ContactFooorm: React.FC = () => {
     e.preventDefault();
     console.log("DATTTTTTTTTAAAAAAAAAA:", formData);
 
-    // try {
-    //   const response = await fetch("/api/dataSaver", {
-    //     method: "POST",
-    //     body: JSON.stringify(formData),
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   });
+    try {
+      const response = await fetch("/api/datasaver", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    //   const data = await response.json();
-    //   console.log("Data sent to database:", data);
-    // } catch (error) {
-    //   console.error("Error sending data to database:", error);
-    // }
+      const data = await response.json();
+      console.log("Data sent to database:", data);
+
+    } catch (error) {
+      seterroroccured(true);
+      console.error("Error sending data to database:", error);
+    }
     // EMAIL JS
     if (form.current) {
       emailjs
@@ -59,8 +63,22 @@ const ContactFooorm: React.FC = () => {
           (result) => {
             console.log(result.text);
             console.log("Message sent successfully");
+            setFormSubmitted(true);
+            setFormData({
+              cont_name: "",
+              cont_company: "",
+              cont_email: "",
+              cont_phone: "",
+              message: "",
+            });
+
+            // You can also add a delay and then hide the notification if needed
+            setTimeout(() => {
+              setFormSubmitted(false);
+            }, 5000);
           },
           (error) => {
+            seterroroccured(true);
             console.log(error.text);
             console.log("Error sending message");
           }
@@ -147,37 +165,6 @@ const ContactFooorm: React.FC = () => {
                     <div className="col-md-7">
                       <div className="contact-wrap w-100 p-md-5 p-4">
                         <h3 className="mb-4 text-white">Contact Us</h3>
-                        <div
-                          className="position-fixed bottom-0 end-0 p-3"
-                          style={{ zIndex: 11 }}
-                        >
-                          <div
-                            id="liveToast"
-                            className="toast hide"
-                            role="alert"
-                            aria-live="assertive"
-                            aria-atomic="true"
-                          >
-                            <div className="toast-header">
-                              <img
-                                src="..."
-                                className="rounded me-2"
-                                alt="..."
-                              />
-                              <strong className="me-auto">Bootstrap</strong>
-                              <small>11 mins ago</small>
-                              <button
-                                type="button"
-                                className="btn-close"
-                                data-bs-dismiss="toast"
-                                aria-label="Close"
-                              ></button>
-                            </div>
-                            <div className="toast-body">
-                              Hello, world! This is a toast message.
-                            </div>
-                          </div>
-                        </div>
                         {/* <div id="form-message-warning" className="mb-4"></div>
                         <div id="form-message-success" className="mb-4">
                           Your message was sent, thank you!
@@ -275,7 +262,78 @@ const ContactFooorm: React.FC = () => {
                           </div>
                         </form>
                       </div>
+                      {formSubmitted && (
+                        <div
+                          className="position-fixed top-0 end-0 p-3"
+                          style={{ zIndex: 11 }}
+                        >
+                          <div
+                            id="liveToast"
+                            className="toast show"
+                            role="alert"
+                            aria-live="assertive"
+                            aria-atomic="true"
+                          >
+                            <div className="toast-header">
+                              <img
+                                src="/sendsuccesfully.webp"
+                                className="rounded me-2"
+                                height={25}
+                                width={25}
+                                alt="location"
+                              />
+                              <strong className="me-auto">Sent Successfully!</strong>
+                              <button
+                                type="button"
+                                className="btn-close"
+                                data-bs-dismiss="toast"
+                                aria-label="Close"
+                                onClick={() => setFormSubmitted(false)}
+                              ></button>
+                            </div>
+                            <div className="toast-body">
+                              Your message was sent successfully! Thank you.
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                      {erroroccured && (
+                        <div
+                          className="position-fixed top-0 end-0 p-3"
+                          style={{ zIndex: 11 }}
+                        >
+                          <div
+                            id="liveToast"
+                            className="toast show"
+                            role="alert"
+                            aria-live="assertive"
+                            aria-atomic="true"
+                          >
+                            <div className="toast-header">
+                              <img
+                                src="/errorocuured.webp"
+                                className="rounded me-2"
+                                height={25}
+                                width={25}
+                                alt="location"
+                              />
+                              <strong className="me-auto text-danger">ERROR OCCURED</strong>
+                              <button
+                                type="button"
+                                className="btn-close"
+                                data-bs-dismiss="toast"
+                                aria-label="Close"
+                                onClick={() => setFormSubmitted(false)}
+                              ></button>
+                            </div>
+                            <div className="toast-body">
+                              Your message wasnt sent successfully! 
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
+
                     <div className="col-md-5 pe-0">
                       <Image src="/fullspice.png" alt=" Error Message" width={0}
                         height={0}

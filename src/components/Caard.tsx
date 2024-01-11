@@ -15,10 +15,10 @@ export default function Caard(props :any) {
         .articles {
             display: flex;
             flex-wrap: wrap;
-            margin: 0 auto;
+            margin: 0 ;
             justify-content: center;
             max-width: 1200px;
-            gap: 24px;
+            gap: 10px;
             
         }
          
@@ -41,7 +41,7 @@ export default function Caard(props :any) {
         .articles article h2 {
             margin: 0 0 18px 0;
             font-size: 1.6rem;
-            color: white;
+            color: black;
             transition: color 0.3s ease-out;
         }
           
@@ -53,7 +53,7 @@ export default function Caard(props :any) {
         }
           
         .article-preview {
-            padding: 24px;
+            padding: 10px;
             overflow-wrap: anywhere;
         }
         
@@ -61,6 +61,7 @@ export default function Caard(props :any) {
             width: 100%;
             height: 200px;
             overflow: hidden;
+            margin : 0;
         }
         
         .articles figure img {

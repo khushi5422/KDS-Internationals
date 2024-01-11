@@ -16,7 +16,6 @@ import NextJsCarousel from "@/components/carousel";
 import Parallax from "@/components/parallax";
 import Bestproducts from "@/components/bestproducts";
 import Roundbtn from "@/components/roundbtn";
-import Accordian from "@/components/accordian";
 import Slider from "@/components/slider";
 import Owner from "@/components/owner";
 import Services from "@/components/services";
@@ -28,14 +27,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-
+      {/* https://youtube.com/shorts/AT70PVbdfBI?si=gseK1KAj6QbQ9c-E */}
       <NextJsCarousel />
-      <AboutUs/>
-      <SquareImageCarousel/>
-      <Services/>
+      <AboutUs />
+      <SquareImageCarousel />
+      <Services />
       <Bestproducts />
       <Parallax />
-      <Slider/>
-      <Owner/>
-    </>  );
+      <Slider />
+      <Owner />
+    </>);
 }

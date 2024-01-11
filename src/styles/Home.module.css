@@ -52,6 +52,9 @@
   .parallaxowner {
     min-height: 630px;
   }
+  .parallaxCaaardService{
+    min-height: 990px;
+  }
 }
 .parallaxCard {
   position: absolute;
@@ -109,7 +112,7 @@
 .slide_track {
   display: flex;
   width: calc(300px * 18);
-  animation: scroll 40s linear infinite;
+  /* animation: scroll 40s linear infinite; */
 }
 .slide_track:hover {
   animation-play-state: paused;

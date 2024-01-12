@@ -59,7 +59,7 @@ const NextJsCarousel = () => {
   showArrows={false}
   autoPlay={true}
   infiniteLoop={true}
-  interval={2000}
+  interval={1500}
   stopOnHover={true}
 >
   {images.map((image, index) => (

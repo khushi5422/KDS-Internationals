@@ -323,7 +323,7 @@ const ContactFooorm: React.FC = () => {
                                 className="btn-close"
                                 data-bs-dismiss="toast"
                                 aria-label="Close"
-                                onClick={() => setFormSubmitted(false)}
+                                onClick={() => seterroroccured(false)}
                               ></button>
                             </div>
                             <div className="toast-body">

@@ -81,7 +81,7 @@ export default function Bestproducts() {
                     </Tab.Container> */}
                     <Caard img1="blackcardemon.png" title1="Black Cardemon" 
                         img2="cardemon.jpg" title2="Cardemom " 
-                        img3="chillyflex.png" title3="Chilly Flex"/>
+                        img3="cumin.jpg" title3="Cumin"/>
                     <Caard img1="cinnamon.png" title1="Cinnamon" 
                         img2="cubebpepper.jpg" title2="Cubeb Pepper " 
                         img3="clove.png" title3="Clove"/>

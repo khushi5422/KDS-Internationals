@@ -1,4 +1,4 @@
-.bg{
+.bg {
   background-image: url("~/public/productsectionbg.webp");
 }
 
@@ -52,7 +52,7 @@
   .parallaxowner {
     min-height: 630px;
   }
-  .parallaxCaaardService{
+  .parallaxCaaardService {
     min-height: 990px;
   }
 }
@@ -67,7 +67,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 80vw ;
+  min-width: 80vw;
   transform: translate(-50%, -50%);
   color: #fff; /* Adjust the color as needed */
 }
@@ -112,7 +112,7 @@
 .slide_track {
   display: flex;
   width: calc(300px * 18);
-  /* animation: scroll 40s linear infinite; */
+  animation: scroll 40s linear infinite;
 }
 .slide_track:hover {
   animation-play-state: paused;
@@ -172,4 +172,21 @@
   right: 0;
   top: 0;
   transform: rotateZ("180deg");
+}
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: xx-large;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: cursive;
+  padding: 8px;
+  border-radius: 5px;
+  z-index: 1;
+  display: none;
+}
+
+.slide:hover .name {
+  display: block;
 }

@@ -12,24 +12,24 @@ const satisfyfont = Satisfy({
 const NextJsCarousel = () => {
   const images = [
     {
-      src: "slider1.webp",
+      src: "c1.png",
       heading: " Herbs And Spices ",
 
     },
     {
-      src: "slider2.jpg",
+      src: "c2.png",
       heading: "The Choice Of Chefs",
 
 
     },
     {
-      src: "slider3.jpg",
+      src: "c3.png",
       heading: " All Organic Spices...",
 
 
     },
     {
-      src: "slider4.jpg",
+      src: "c4.png",
       heading: "We Provide Reliable & Fast Delivery",
 
 
@@ -57,7 +57,7 @@ const NextJsCarousel = () => {
   showThumbs={false}
   showStatus={false}
   showArrows={false}
-  autoPlay={false}
+  autoPlay={true}
   infiniteLoop={true}
   interval={2000}
   stopOnHover={true}

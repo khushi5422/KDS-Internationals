@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("~/public/c2.png");
+  background-image: url("~/public/c3.png");
 }
 
 .parallaxText {
@@ -58,7 +58,7 @@
   .parallax,
   .parallaxCaaard,
   .parallaxCaaardService {
-    background-size: contain;
+    background-size: 100vw auto;
     background-position: center top;
   }
 
@@ -72,6 +72,9 @@
   .parallaxCaaardService {
     /* min-height: 600px; */
     min-height: 990px; /* Adjust as needed */
+  }
+  .parallax {
+    background-image: url("~/public/cmobile.png");
   }
 }
 .parallaxCard {

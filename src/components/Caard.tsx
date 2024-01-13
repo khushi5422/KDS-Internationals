@@ -11,6 +11,11 @@ export default function Caard(props :any) {
             align-items: start;
             padding: 50px 32px;
         }
+        @media (max-width: 768px) {
+            .background {
+                padding: 20px 12px;
+            }
+        }
          
         .articles {
             display: flex;

@@ -3,23 +3,30 @@ import classes from "@/styles/Home.module.css";
 
 export default function Slider() {
   const spicesimage = [
-    "cardemon.jpg",
-    "blackcardemon.png",
-    "chillyflex.png",
+    "blacksessme.png",
+    "chilly.png",
     "cinnamon.png",
-    "clove.png",
-    "cubebpepper.jpg",
-    "driedchillies.png",
-    "driedginger.png",
-    "fennel.png",
-    "fenugreekseeds.png",
-    "nutmeg.webp",
-    "pimento.jpg",
-    "pippalipepper.webp",
-    "rosehips.png",
-    "saffron.jpg",
-    "turmeric.jpg",
-    "whitepepper.jpg"
+    "elaichi.png",
+    "fenugreek.png",
+    "pimento.png",
+    "saffron.png",
+    "taj.png",
+    "Fennelseeds.png",
+    "fenugreek.png",
+    "pimento.png",
+    "pippalipepper.png",
+    "saffron.png"
+
+    // "clove.png",
+    // "cubebpepper.jpg",
+    // "driedchillies.png",
+    // "driedginger.png",
+    // "fennel.png",
+    // "nutmeg.webp",
+    // "pippalipepper.webp",
+    // "rosehips.png",
+    // "turmeric.jpg",
+    // "whitepepper.jpg"
   ];
 
   const spiceNames = [

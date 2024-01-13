@@ -48,6 +48,7 @@
 @media only screen and (max-width: 769px) {
   .parallaxCaaard {
     min-height: 1000px;
+    min-width: 30%;
   }
   .parallaxowner {
     min-height: 630px;

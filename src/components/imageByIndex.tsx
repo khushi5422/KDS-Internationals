@@ -2,11 +2,11 @@ export const images: string[] = [
   "blacksessme.png",
   "chilly.png",
   "cinnamon.png",
-  "elaichi.png",
+  "asafoetida.webp",
   "fenugreek.png",
   "pimento.png",
   "saffron.png",
-  "taj.png",
+  "staranise.png",
   "Fennelseeds.png"
   ];
   

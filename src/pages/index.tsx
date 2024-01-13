@@ -20,19 +20,22 @@ import Slider from "@/components/slider";
 import Owner from "@/components/owner";
 import Services from "@/components/services";
 import AboutUs from "@/components/aboutus";
-import SquareImageCarousel from "@/components/squareslider";
+import EmblaCarousel from "@/components/fadecarousal";
+import { EmblaOptionsType } from "embla-carousel";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 export default function Home() {
+
   return (
     <>
       {/* https://youtube.com/shorts/AT70PVbdfBI?si=gseK1KAj6QbQ9c-E */}
       <NextJsCarousel />
       <AboutUs />
-      <SquareImageCarousel />
       <Services />
-      <Bestproducts />
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       <Parallax />
       <Slider />
       <Owner />

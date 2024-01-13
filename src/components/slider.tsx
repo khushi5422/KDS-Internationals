@@ -3,50 +3,36 @@ import classes from "@/styles/Home.module.css";
 
 export default function Slider() {
   const spicesimage = [
-    "blacksessme.png",
-    "chilly.png",
-    "cinnamon.png",
-    "elaichi.png",
-    "fenugreek.png",
-    "pimento.png",
-    "saffron.png",
-    "taj.png",
-    "Fennelseeds.png",
-    "fenugreek.png",
-    "pimento.png",
-    "pippalipepper.png",
-    "saffron.png"
-
-    // "clove.png",
-    // "cubebpepper.jpg",
-    // "driedchillies.png",
-    // "driedginger.png",
-    // "fennel.png",
-    // "nutmeg.webp",
-    // "pippalipepper.webp",
-    // "rosehips.png",
-    // "turmeric.jpg",
-    // "whitepepper.jpg"
+    "blackcardemon.png",
+    "ginger.png",
+    "staranise.png",
+    "cinnamon.png","asafoetida.webp","garlic.png",
+    "nutmeg.webp",
+    "cumin.png",
+    "blackpepper.png","clove.png","mustardseeds.png","bayleaf.png",
+    "chilly.png","coriander.png","mace.png","poppyseeds.png",
+    "greencardamom.png","greenchilly.png"
   ];
 
   const spiceNames = [
-    "Cardamom",
     "Black Cardamom",
-    "Chilly Flex",
+    "Ginger",
+    "Star Anise",
     "Cinnamon",
-    "Clove",
-    "Cubeb Pepper",
-    "Dried Chillies",
-    "Dried Ginger",
-    "Fennel",
-    "Fenugreek Seeds",
+    "Asafoetida",
+    "Garlic",
     "Nutmeg",
-    "Pimento",
-    "Pippali Pepper",
-    "Rosehips",
-    "Saffron",
-    "Turmeric",
-    "White Pepper"
+    "Cumin",
+    "Black Pepper",
+    "Clove",
+    "Mustard Seeds",
+    "Bay Leaf",
+    "Chilly Pepper",
+    "Coriander",
+    "Mace",
+    "Poppy Seeds",
+    "Green Cardamon",
+    "Green Chilly"
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);

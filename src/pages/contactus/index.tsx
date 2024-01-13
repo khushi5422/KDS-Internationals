@@ -34,22 +34,22 @@ const ContactFooorm: React.FC = () => {
     e.preventDefault();
     console.log("DATTTTTTTTTAAAAAAAAAA:", formData);
 
-    try {
-      const response = await fetch("/api/datasaver", {
-        method: "POST",
-        body: JSON.stringify(formData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+    // try {
+    //   const response = await fetch("/api/datasaver", {
+    //     method: "POST",
+    //     body: JSON.stringify(formData),
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   });
 
-      const data = await response.json();
-      console.log("Data sent to database:", data);
+    //   const data = await response.json();
+    //   console.log("Data sent to database:", data);
 
-    } catch (error) {
-      seterroroccured(true);
-      console.error("Error sending data to database:", error);
-    }
+    // } catch (error) {
+    //   seterroroccured(true);
+    //   console.error("Error sending data to database:", error);
+    // }
     // EMAIL JS
     if (form.current) {
       emailjs
@@ -373,6 +373,18 @@ const ContactFooorm: React.FC = () => {
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
+                          <img src='whatsapp.svg' alt="WhatsApp" />
+                        </div>
+                        <div className="text">
+                          <p>
+                            <span>WhatsApp</span> <Link href="https://wa.me/919512154200?text=Hello I want to buy spice from you" className="text-dark">+91 9512154200</Link>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-3 boxtop">
+                      <div className="dbox w-100 text-center">
+                        <div className="icon d-flex align-items-center justify-content-center">
                           <img src='mail.svg' alt="Mail Id" />
                         </div>
                         <div className="text">
@@ -385,18 +397,7 @@ const ContactFooorm: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-3 boxtop">
-                      <div className="dbox w-100 text-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
-                          <img src='website.svg' alt="Website" />
-                        </div>
-                        <div className="text">
-                          <p>
-                            <span>Website</span> <Link href="#" className="text-dark">yoursite.com</Link>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
               </div>

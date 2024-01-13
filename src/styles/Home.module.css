@@ -45,16 +45,33 @@
   background-image: url("~/public/c4.png");
 }
 
-@media only screen and (max-width: 769px) {
+/* @media only screen and (max-width: 769px) {
   .parallaxCaaard {
-    min-height: 1000px;
+    
     min-width: 30%;
   }
+  
+  
+} */
+
+@media only screen and (max-width: 769px) {
+  .parallax,
+  .parallaxCaaard,
+  .parallaxCaaardService {
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .parallaxCaaard {
+    min-height: 1000px;
+    min-width: 100%; /* Adjust as needed */
+  }
   .parallaxowner {
-    min-height: 630px;
+    min-height: 650px;
   }
   .parallaxCaaardService {
-    min-height: 990px;
+    /* min-height: 600px; */
+    min-height: 990px; /* Adjust as needed */
   }
 }
 .parallaxCard {

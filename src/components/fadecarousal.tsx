@@ -3,6 +3,7 @@ import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import { flushSync } from 'react-dom'
 import imageByIndex from './imageByIndex'
+import Autoplay from 'embla-carousel-autoplay';
 
 const TWEEN_FACTOR = 4.2
 
@@ -13,10 +14,14 @@ type PropType = {
   slides?: number[]
   options?: EmblaOptionsType
 }
-
+const autoplayOptions = {
+  delay: 2000, // Delay between slides in milliseconds
+  stopOnInteraction: true, // Whether to stop autoplay on user interaction
+  // ... other options
+};
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides=[], options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const { slides = [], options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
   const [tweenValues, setTweenValues] = useState<number[]>([])
 
   const onScroll = useCallback(() => {

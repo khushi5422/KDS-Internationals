@@ -23,16 +23,6 @@
   color: #fff; /* Adjust the color as needed */
 }
 
-@media only screen and (max-width: 769px) {
-  .parallax {
-    background-attachment: scroll; /* Disable fixed background */
-    background-image: url("~/public/c2.png"); /* Mobile specific image */
-    position: relative; /* Use relative positioning */
-  }
-  .parallaxText {
-    left: 39%;
-  }
-}
 .parallaxCaaard {
   min-height: 510px;
   background-attachment: fixed;
@@ -50,35 +40,6 @@
   background-image: url("~/public/c4.png");
 }
 
-@media only screen and (max-width: 769px) {
-  .parallaxCaaard {  
-    min-width: 30%;
-  } 
-}
-
-  @media only screen and (max-width: 769px) { 
-  /*.parallax,
-  .parallaxCaaard,
-  .parallaxCaaardService {
-    background-size: 100vw auto;
-    background-position: center top;
-  }*/
-
-  .parallaxCaaard {
-    min-height: 1000px;
-    min-width: 100%;   
-  }
-  .parallaxowner {
-    min-height: 650px;
-  }
-  .parallaxCaaardService {
-     min-height: 600px; 
-    min-height: 990px; 
-  }
-  .parallax {
-    background-image: url("~/public/cmobile.png");
-  }
-} 
 .parallaxCard {
   position: absolute;
   top: 50%;
@@ -94,6 +55,32 @@
   transform: translate(-50%, -50%);
   color: #fff; /* Adjust the color as needed */
 }
+@media only screen and (max-width: 769px) { 
+  .parallax,
+  .bg,
+  .parallaxCaaard,
+  .parallaxCaaardService {
+    background-attachment: scroll;
+    position: relative;
+  }
+  .parallaxCaaard {  
+    min-width: 30%;
+  } 
+  .parallaxText {
+    left: 39%;
+  }
+  .parallaxCaaard {
+    min-height: 1000px;
+    min-width: 100%;   
+  }
+  .parallaxowner {
+    min-height: 650px;
+  }
+  .parallaxCaaardService {
+     min-height: 600px; 
+    min-height: 990px; 
+  }
+} 
 
 /* .overlay-lighten {
   filter: brightness(50%);

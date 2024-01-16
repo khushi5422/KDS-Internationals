@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("~/public/c3.png");
+  background-image: url("~/public/c2.png");
 }
 
 .parallaxText {
@@ -45,38 +45,35 @@
   background-image: url("~/public/c4.png");
 }
 
-/* @media only screen and (max-width: 769px) {
-  .parallaxCaaard {
-    
-    min-width: 30%;
-  }
-  
-  
-} */
-
 @media only screen and (max-width: 769px) {
-  .parallax,
+  .parallaxCaaard {  
+    min-width: 30%;
+  } 
+}
+
+  @media only screen and (max-width: 769px) { 
+  /*.parallax,
   .parallaxCaaard,
   .parallaxCaaardService {
     background-size: 100vw auto;
     background-position: center top;
-  }
+  }*/
 
   .parallaxCaaard {
     min-height: 1000px;
-    min-width: 100%; /* Adjust as needed */
+    min-width: 100%;   
   }
   .parallaxowner {
     min-height: 650px;
   }
   .parallaxCaaardService {
-    /* min-height: 600px; */
-    min-height: 990px; /* Adjust as needed */
+     min-height: 600px; 
+    min-height: 990px; 
   }
   .parallax {
     background-image: url("~/public/cmobile.png");
   }
-}
+} 
 .parallaxCard {
   position: absolute;
   top: 50%;

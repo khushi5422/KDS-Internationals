@@ -11,9 +11,9 @@ export default function Document() {
 
       </Head>
       <body>
-      {/* <div id="globalLoader">
-          <img src="../../loader.svg" alt="" />
-        </div> */}
+      <div id="globalLoader">
+          <img src="loader.gif" alt="loader" />
+        </div>
         <Main />
         <NextScript />
       </body>

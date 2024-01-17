@@ -3,16 +3,22 @@ import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Thumb } from './emblathumb'
 import imageByIndex from './imageByIndex'
+import Autoplay from 'embla-carousel-autoplay';
 
 type PropType = {
   slides?: number[]
   options?: EmblaOptionsType
 }
+const autoplayOptions = {
+  delay: 2000, // Delay between slides in milliseconds
+  stopOnInteraction: true, // Whether to stop autoplay on user interaction
+  // ... other options
+};
 
 const ThumbnailCarousel: React.FC<PropType> = (props) => {
   const { slides=[], options } = props
   const [selectedIndex, setSelectedIndex] = useState(0)
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options)
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options , [Autoplay(autoplayOptions)])
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: 'keepSnaps',
     dragFree: true

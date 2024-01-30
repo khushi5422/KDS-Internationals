@@ -15,14 +15,16 @@ type PropType = {
   options?: EmblaOptionsType
 }
 const autoplayOptions = {
-  delay: 2000, // Delay between slides in milliseconds
-  stopOnInteraction: true, // Whether to stop autoplay on user interaction
+  delay: 4000, // Delay between slides in milliseconds
+  stopOnInteraction: true,
+   // Whether to stop autoplay on user interaction
   // ... other options
 };
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides = [], options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
   const [tweenValues, setTweenValues] = useState<number[]>([])
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const onScroll = useCallback(() => {
     if (!emblaApi) return
@@ -50,14 +52,25 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, setTweenValues])
 
   useEffect(() => {
-    if (!emblaApi) return
-
-    onScroll()
+    if (!emblaApi) return;
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+    emblaApi.on('select', onSelect);
+    onSelect();
+  
+    onScroll();
     emblaApi.on('scroll', () => {
-      flushSync(() => onScroll())
-    })
-    emblaApi.on('reInit', onScroll)
-  }, [emblaApi, onScroll])
+      flushSync(() => onScroll());
+    });
+    emblaApi.on('reInit', onScroll);
+  
+    // Explicitly return a function that returns void
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi, onScroll]);
+  
 
   return (
     <div className="embla">
@@ -76,6 +89,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 src={imageByIndex(index)}
                 alt="Your alt text"
               />
+              <div
+                className={`embla__slide__overlay ${
+                  selectedIndex === index ? 'embla__slide__overlay--active' : ''
+                }`}
+              >
+                Your Text Here
+              </div>
             </div>
           ))}
         </div>

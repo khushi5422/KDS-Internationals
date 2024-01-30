@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import Navigationbar from "./navbar";
 import Footer from "./footer";
-import Navug from "./navig";
 
 
 interface LayoutProps {

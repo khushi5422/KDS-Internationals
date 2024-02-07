@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 interface FormData {
   cont_name: string;
   cont_company: string;
@@ -89,6 +90,10 @@ const ContactFooorm: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>Contact Us</title>
+        <meta name="description" content="J K Exports" />
+      </Head>
       <style>
         {`
         .wrapper{
@@ -327,7 +332,7 @@ const ContactFooorm: React.FC = () => {
                               ></button>
                             </div>
                             <div className="toast-body">
-                              Your message wasnt sent successfully! 
+                              Your message wasnt sent successfully!
                             </div>
                           </div>
                         </div>
@@ -397,7 +402,7 @@ const ContactFooorm: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                   
+
                   </div>
                 </div>
               </div>

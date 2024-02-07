@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
 export default function index() {
   return <>
+   <Head>
+        <title>FREQUENTLY ASKED QUESTIONS</title>
+        <meta name="description" content="J K Exports" />
+      </Head>
     <style jsx>{`
 
         .center {

@@ -1,9 +1,14 @@
 import Caard from '@/components/Caard';
+import Head from 'next/head';
 
 export default function App() {
 
   return (
     <>
+      <Head>
+        <title>Gallery</title>
+        <meta name="description" content="J K Exports" />
+      </Head>
       <div>
         <Caard img1="blackcardemon.png" title1="Turmeric"
          description1="Turmeric is one of natures most wonderful gifts, with uses ranging from ulcer treatment and heart disease prevention to being a popular ingredient in meals. This amazing spice not only gives your cuisine a distinct flavor, but it is also one of the best natural medicines in the world. This is exactly why turmeric has always been and will continue to be in high demand all around the world."

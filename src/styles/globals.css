@@ -148,6 +148,7 @@ header {
   .embla__slide__overlay--active {
 	top: 50%; /* Move to the center */
 	opacity: 1; /* Fade in */
+  font-size: xx-large;
   }
   
 

@@ -241,8 +241,8 @@ export default function Footer() {
                     <div className="flex">
                         <section className="flex-content padding_1x">
                             <img src='../../logo.png' alt='Loading..' className='image_logo'></img>
-                            <p className="mt-2">JK Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
-                            We at JKExport having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
+                            <p className="mt-2">J K Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
+                            We at J K Export having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
                                 </p>
                         </section>
                         <section className="flex-content padding_1x">
@@ -276,7 +276,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <section className="flex-content padding_1x text-center bg">
-                            <p>Copyright ©2020 All rights reserved || JK Exports</p>
+                            <p>Copyright ©2020 All rights reserved || J K Exports</p>
                         </section>
                     </div>
                 </footer>

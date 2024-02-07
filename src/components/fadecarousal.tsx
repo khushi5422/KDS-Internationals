@@ -21,6 +21,21 @@ const autoplayOptions = {
   // ... other options
 };
 const EmblaCarousel: React.FC<PropType> = (props) => {
+  const spiceNames = [
+    "Black Cardamom",
+    "Black Pepper",
+    "Chilly Pepper",
+    "Coriander",
+    "Cumin",
+    "Fennel Seeds",
+    "Garlic",
+    "Ginger",
+    "Green Chilly",
+    "Poppy Seeds",
+    "Saffron"
+    
+  ];
+
   const { slides = [], options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
   const [tweenValues, setTweenValues] = useState<number[]>([])
@@ -72,6 +87,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, onScroll]);
   
 
+
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
@@ -94,7 +110,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                   selectedIndex === index ? 'embla__slide__overlay--active' : ''
                 }`}
               >
-                Your Text Here
+                {spiceNames[index]}
               </div>
             </div>
           ))}

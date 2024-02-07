@@ -8,6 +8,7 @@ import AboutUs from "@/components/aboutus";
 import EmblaCarousel from "@/components/fadecarousal";
 import { EmblaOptionsType } from "embla-carousel";
 import ThumbnailCarousel from "@/components/thumbnailcarousal";
+import Head from "next/head";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,6 +22,10 @@ const SLIDES2 = Array.from(Array(SLIDE_COUNT2).keys())
 export default function Home() {
   return (
     <>
+     <Head>
+        <title>Home page</title>
+        <meta name="description" content="J K Exports" />
+      </Head>
       <NextJsCarousel />
       <AboutUs />
       <ThumbnailCarousel slides={SLIDES2} options={OPTIONS2}/>

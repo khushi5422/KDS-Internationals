@@ -51,8 +51,8 @@ const AboutUs = () => {
         <Container className=''>
           <Row>
             <Col lg={6} md={12}>
-              <h2 className="about_title">ABOUT JK Exports</h2>
-              <h3>Introducing JK Export- Your Trusted Source for Quality Products</h3>
+              <h2 className="about_title">ABOUT J K Exports</h2>
+              <h3>Introducing J K Export- Your Trusted Source for Quality Products</h3>
               <div className="about_image">
                 <img
                   src="/fullspice.png" // Update the path to your image
@@ -64,11 +64,11 @@ const AboutUs = () => {
             <Col lg={6} md={12}>
               <div className="about_content">
 
-                <p className='mid'>Nestled in <b>Ahmedabad</b>, the heart of India, JK Exports epitomizes a legacy of delivering unparalleled quality in the realm
+                <p className='mid'>Nestled in <b>Ahmedabad</b>, the heart of India, J K Exports epitomizes a legacy of delivering unparalleled quality in the realm
                   of spice exports. With a commitment to excellence, our journey unfolds against the backdrop of Indias rich culinary heritage. We take pride in
-                  being a beacon of quality, seamlessly blending the diverse flavors of  <b>India</b> into every spice we export. At JK Exports, Indias essence is intricately
+                  being a beacon of quality, seamlessly blending the diverse flavors of  <b>India</b> into every spice we export. At J K Exports, Indias essence is intricately
                   woven into our products, ensuring an authentic, aromatic experience that transcends borders. As purveyors of premium quality, we invite you to embark
-                  on a sensory exploration, where JK Exports stands as the epitome of Indias finest spices, meticulously curated for global kitchens.
+                  on a sensory exploration, where J K Exports stands as the epitome of Indias finest spices, meticulously curated for global kitchens.
                 </p>
                 {/* <Button variant="warning" className='mt-3'>Read More ...</Button> */}
               </div>

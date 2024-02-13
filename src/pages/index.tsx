@@ -9,8 +9,7 @@ import EmblaCarousel from "@/components/fadecarousal";
 import { EmblaOptionsType } from "embla-carousel";
 import ThumbnailCarousel from "@/components/thumbnailcarousal";
 import Head from "next/head";
-
-
+import ImageGallery from "@/components/imagegallery";
 const inter = Inter({ subsets: ["latin"] });
 const OPTIONS: EmblaOptionsType = { loop: true }
 const SLIDE_COUNT = 5
@@ -23,16 +22,17 @@ export default function Home() {
   return (
     <>
      <Head>
-        <title>Home page</title>
-        <meta name="description" content="J K Exports" />
+        <title>Trusted Source for Quality Organic Herbs and Spices </title>
+        <meta name="description" content="Discover the trusted source for quality organic herbs and spices at J K Exports " />
       </Head>
       <NextJsCarousel />
       <AboutUs />
       <ThumbnailCarousel slides={SLIDES2} options={OPTIONS2}/>
       <Services />
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <ImageGallery/>
       <Parallax />
       <Slider />
       <Owner />
+      
     </>);
 }

@@ -38,7 +38,7 @@ export default function ImageGallery() {
           max-width: 100%;
         }
         .column img {
-          filter: grayscale(0) brightness(1);
+          filter: grayscale(1) brightness(0.5);
         }
       }
       

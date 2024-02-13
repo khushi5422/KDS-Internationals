@@ -5,7 +5,7 @@ import Head from "next/head";
 // import { Metadata } from 'next';
  
 // export const metadata: Metadata = {
-//   title: 'Spices Beyond Borders',
+//   title: 'Spices Exporter & Food Supplier Department',
 //   description: 'Experience the global allure of J K Exports. From the vibrant markets of Ahmedabad to kitchens worldwide, our spices transcend borders.',
 //   // metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 // };
@@ -15,7 +15,7 @@ export default function Aboutus() {
   return (
     <>
     <Head>
-        <title>Spices Beyond Borders</title>
+        <title>Spices Exporter & Food Supplier Department</title>
         <meta name="description" content="Experience the global allure of J K Exports." />
       </Head>
     <style>{`
@@ -50,10 +50,10 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Spices Beyond Borders</h3>
+          <h1>Spices Exporter & Food Supplier Department</h1>
+          {/* after adding content make in 2 parahs one for h2 and one for h3  */}
           <div className={`${about.grey}`}>
-          Experience the global allure of J K Exports. From the vibrant markets of Ahmedabad to kitchens worldwide, our spices transcend borders. 
-          Join us in spreading the rich tapestry of Indian flavors to every corner of the globe.
+          Welcome to J K Exports, your gateway to a world of exquisite flavors and premium quality spices. As pioneers in the spices export industry, we take pride in sourcing and delivering the finest ingredients to kitchens worldwide, ensuring a culinary experience like no other.
           </div>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
          
@@ -68,10 +68,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Heritage in Every Spice</h3>
+          <h1>Exploring Culinary Horizons</h1>
           <p className={`${about.grey}`}>
-          Embark on a journey through Indias culinary legacy with J K Exports. Our spices are a testament to centuries-old traditions, 
-          capturing the essence of Indias diverse culinary heritage. Each blend tells a story, making your dishes a culinary odyssey.
+          Immerse yourself in the rich tapestry of taste with J K Exports, where each spice blend is a testament to our dedication to quality and authenticity. As leaders in the industry, we cater to the discerning palate of chefs and home cooks alike, offering a diverse range of spices sourced from the worlds leading producers.
           </p>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
         </div>
@@ -101,10 +100,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Green Commitment</h3>
+          <h1>Unveiling the Essence</h1>
           <div className={`${about.grey}`}>
-          At J K Exports, we embrace sustainability. Our spices are sourced responsibly, fostering eco-friendly practices. Join us in the journey towards a 
-          greener tomorrow, where every flavor is infused with a commitment to the planet.
+         At J K Exports, we believe in forging meaningful connections through food. As the largest exporters of food, we understand the importance of trust and reliability in every transaction. From top exporters of rice to major food exporters, our extensive network ensures that the essence of Indian cuisine reaches every corner of the globe.
           </div>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
          
@@ -119,10 +117,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Culinary Mastery</h3>
+          <h1>Nurturing Global Gastronomy</h1>
           <p className={`${about.grey}`}>
-          Unlock the secrets of culinary excellence with J K Exports. Our spices are the choice of seasoned chefs and home cooks alike, transforming ordinary 
-          dishes into extraordinary experiences. Elevate your culinary journey with the touch of J K Exports expertise.
+          Join us on a journey of culinary exploration, where every dish tells a story of tradition and innovation. With our commitment to sustainability and quality, we stand as a beacon of excellence in the world of food exports. Experience the taste of distinction with J K Exports - your partner in culinary excellence.
           </p>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
         </div>
@@ -152,10 +149,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Unrivaled Quality</h3>
+          <h1>Empowering Food Innovations</h1>
           <p className={`${about.grey}`}>
-          Immerse yourself in a symphony of flavors meticulously crafted by J K Exports. We stand out with a commitment to sourcing only the finest spices, 
-          ensuring an unrivaled quality that elevates your culinary creations.
+          Discover a world of possibilities with J K Exports, where we empower food innovations through our premium spices and ingredients. From traditional blends to exotic flavors, we provide the essential ingredients for chefs and food enthusiasts to create memorable culinary experiences.
           </p>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
         </div>
@@ -180,10 +176,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Spices Beyond Borders</h3>
+          <h1>Spices Exporter & Food Supplier Department</h1>
           <div className={`${about.grey}`}>
-          Experience the global allure of J K Exports. From the vibrant markets of Ahmedabad to kitchens worldwide, our spices transcend borders. 
-          Join us in spreading the rich tapestry of Indian flavors to every corner of the globe.
+          Welcome to J K Exports, your gateway to a world of exquisite flavors and premium quality spices. As pioneers in the spices export industry, we take pride in sourcing and delivering the finest ingredients to kitchens worldwide, ensuring a culinary experience like no other.
           </div>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
          
@@ -206,10 +201,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Heritage in Every Spice</h3>
+          <h1>Exploring Culinary Horizons</h1>
           <p className={`${about.grey}`}>
-          Embark on a journey through Indias culinary legacy with J K Exports. Our spices are a testament to centuries-old traditions, 
-          capturing the essence of Indias diverse culinary heritage. Each blend tells a story, making your dishes a culinary odyssey.
+          Immerse yourself in the rich tapestry of taste with J K Exports, where each spice blend is a testament to our dedication to quality and authenticity. As leaders in the industry, we cater to the discerning palate of chefs and home cooks alike, offering a diverse range of spices sourced from the worlds leading producers.
           </p>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
         </div>
@@ -232,10 +226,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Green Commitment</h3>
+          <h1>Unveiling the Essence</h1>
           <div className={`${about.grey}`}>
-          At J K Exports, we embrace sustainability. Our spices are sourced responsibly, fostering eco-friendly practices. Join us in the journey towards a 
-          greener tomorrow, where every flavor is infused with a commitment to the planet.
+         At J K Exports, we believe in forging meaningful connections through food. As the largest exporters of food, we understand the importance of trust and reliability in every transaction. From top exporters of rice to major food exporters, our extensive network ensures that the essence of Indian cuisine reaches every corner of the globe.
           </div>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
          
@@ -258,10 +251,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Culinary Mastery</h3>
+          <h1>Nurturing Global Gastronomy</h1>
           <p className={`${about.grey}`}>
-          Unlock the secrets of culinary excellence with J K Exports. Our spices are the choice of seasoned chefs and home cooks alike, transforming ordinary 
-          dishes into extraordinary experiences. Elevate your culinary journey with the touch of J K Exports expertise.
+          Join us on a journey of culinary exploration, where every dish tells a story of tradition and innovation. With our commitment to sustainability and quality, we stand as a beacon of excellence in the world of food exports. Experience the taste of distinction with J K Exports - your partner in culinary excellence.
           </p>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
         </div>
@@ -283,10 +275,9 @@ export default function Aboutus() {
           data-aos-once="true"
         >
           {/* <div className={`${about.containeer}`}>rings</div> */}
-          <h3>Unrivaled Quality</h3>
+          <h1>Empowering Food Innovations</h1>
           <p className={`${about.grey}`}>
-          Immerse yourself in a symphony of flavors meticulously crafted by J K Exports. We stand out with a commitment to sourcing only the finest spices, 
-          ensuring an unrivaled quality that elevates your culinary creations.
+          Discover a world of possibilities with J K Exports, where we empower food innovations through our premium spices and ingredients. From traditional blends to exotic flavors, we provide the essential ingredients for chefs and food enthusiasts to create memorable culinary experiences.
           </p>
           {/* <b>#rings #necklaces #silverrings #earrings #goldsmith</b> */}
         </div>

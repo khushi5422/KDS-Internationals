@@ -21,7 +21,7 @@ export default function Owner() {
                                 world together!
                             </Card.Text>
                             <div className='d-flex gap-2 justify-content-center'>
-                                <Image src="/ellipse.png" width={80} height={80} className='rounded-circle' alt='Image' />
+                                <Image src="/ellipse.webp" width={80} height={80} className='rounded-circle' alt='Image' />
                                 <div style={{ paddingLeft: '3vw' }}>
                                     <h2>PRUTHVI PATEL</h2>
                                     <p>Owner</p>

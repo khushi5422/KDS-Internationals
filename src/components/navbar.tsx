@@ -46,7 +46,7 @@ const Navigationbar = () => {
       {/* <header>
         <nav className={`nav`}>
           <Link href={"/"}>
-            <img src="../../logo.png" alt="Loading.." className="image_logo" />
+            <img src="../../logo.webp" alt="Loading.." className="image_logo" />
           </Link>
           <div
             onClick={() => setNavActive(!navActive)}
@@ -76,7 +76,7 @@ const Navigationbar = () => {
       <Container className="ps-0">
         <Navbar.Brand href="#" className="wid">
           <img
-            src="../../logo.png"
+            src="../../logo.webp"
             alt="Logo"
             className="logo"
           />

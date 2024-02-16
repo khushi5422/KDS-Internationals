@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
+import NewComponent from './new';
 
 export default function ImageGallery() {
 
-    return (
-        <>
-            <style>{`
+  return (
+    <>
+      <style>{`
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -42,33 +43,31 @@ export default function ImageGallery() {
         }
       }
       
-    `}</style>
-            <div className="row mt-5">
-                <div className="column">
-                    <img src="blackcardemon.png" alt=""  />
+      
+    // `}</style>
+      <div className="row mt-5">
+        <div className="column">
+          <img src="blackcardemon.webp" alt="blackcardemon" />
+          <img src="blackpepper.webp" alt="blackpepper" />
 
-                    <img src="blackpepper.png" alt="" />
+          <img src="chilly.webp" alt="chilly" />
+        </div>
+        <div className="column">
+          <img src="cumin.webp" alt="cumin" />
 
-                    <img src="chilly.png" alt="" />
+          <img src="Fennelseeds.webp" alt="Fennelseeds" />
 
-                    <img src="coriander.png" alt="" />
-                </div>
-                <div className="column">
-                    <img src="cumin.png" alt="" />
+          <img src="garlic.webp" alt="garlic" />
+        </div>
+        <div className="column">
+          <img src="ginger.webp" alt="ginger" />
 
-                    <img src="Fennelseeds.png" alt="" />
+          <img src="greenchilly.webp" alt="greenchilly" />
 
-                    <img src="garlic.png" alt="" />
-                </div>
-                <div className="column">
-                    <img src="ginger.png" alt="" />
-
-                    <img src="greenchilly.png" alt="" />
-
-                    <img src="poppyseeds.png" alt="" />
-                </div>
-            </div>
-        </>
-    );
+          <img src="poppyseeds.webp" alt="poppyseeds" />
+        </div>
+      </div>
+    </>
+  );
 };
 

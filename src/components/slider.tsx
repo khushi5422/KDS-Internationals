@@ -3,15 +3,15 @@ import classes from "@/styles/Home.module.css";
 
 export default function Slider() {
   const spicesimage = [
-    "blackcardemon.png",
-    "ginger.png",
-    "staranise.png",
-    "cinnamon.png","asafoetida.webp","garlic.png",
+    "blackcardemon.webp",
+    "ginger.webp",
+    "staranise.webp",
+    "cinnamon.webp","asafoetida.webp","garlic.webp",
     "nutmeg.webp",
-    "cumin.png",
-    "blackpepper.png","clove.png","mustardseeds.png","bayleaf.png",
-    "chilly.png","coriander.png","mace.png","poppyseeds.png",
-    "greencardamom.png","greenchilly.png"
+    "cumin.webp",
+    "blackpepper.webp","clove.webp","mustardseeds.webp","bayleaf.webp",
+    "chilly.webp","coriander.webp","mace.webp","poppyseeds.webp",
+    "greencardamom.webp","greenchilly.webp"
   ];
 
   const spiceNames = [

@@ -55,7 +55,7 @@ const AboutUs = () => {
               <h3>Introducing J K Export- Your Trusted Source for Quality Products</h3>
               <div className="about_image">
                 <img
-                  src="/fullspice.png" // Update the path to your image
+                  src="/fullspice.webp" // Update the path to your image
                   alt="About Us"
                   className="img_fluid"
                 />

@@ -1,5 +1,5 @@
 .bg {
-  background-image: url("~/public/c1.png");
+  background-image: url("~/public/c1.webp");
 }
 
 .parallaxContainer {
@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("~/public/c2.png");
+  background-image: url("~/public/c2.webp");
 }
 
 .parallaxText {
@@ -29,7 +29,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("~/public/c3.png");
+  background-image: url("~/public/c3.webp");
 }
 .parallaxCaaardService {
   min-height: 510px;
@@ -37,7 +37,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("~/public/c4.png");
+  background-image: url("~/public/c4.webp");
 }
 
 .parallaxCard {

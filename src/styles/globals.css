@@ -180,14 +180,13 @@ header {
   object-fit: cover;
 }
 .embla__slide__number {
-  width: 4.6rem;
+  width: 15.6rem;
   height: 4.6rem;
   z-index: 1;
   position: absolute;
   top: 0.6rem;
   right: 0.6rem;
-  border-radius: 50%;
-  background-color: rgba(var(--background-site-rgb-value), 0.85);
+  background-color: beige;
   line-height: 4.6rem;
   font-weight: 900;
   text-align: center;
@@ -202,7 +201,7 @@ header {
   );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #182933;
   font-size: 1.6rem;
   display: block;
   position: absolute;

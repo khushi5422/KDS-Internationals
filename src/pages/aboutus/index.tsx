@@ -40,7 +40,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f1.png')` }}
+          style={{ backgroundImage: `url('f1.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-1 col-6 `}
@@ -80,7 +80,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f2.png')` }}
+          style={{ backgroundImage: `url('f2.webp')` }}
         ></div>
       </div>
       <div className={`${about.around} row mt-5 `}>
@@ -90,7 +90,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f3.png')` }}
+          style={{ backgroundImage: `url('f3.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-1 col-6 `}
@@ -129,7 +129,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f4.png')` }}
+          style={{ backgroundImage: `url('f4.webp')` }}
         ></div>
       </div>
       <div className={`${about.around} row mt-5 mb-4 `}>
@@ -139,7 +139,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f5.png')` }}
+          style={{ backgroundImage: `url('f5.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-2 col-6  `}
@@ -166,7 +166,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f1.png')` }}
+          style={{ backgroundImage: `url('f1.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-1 col-6 `}
@@ -191,7 +191,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f2.png')` }}
+          style={{ backgroundImage: `url('f2.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-2 col-6 `}
@@ -216,7 +216,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f3.png')` }}
+          style={{ backgroundImage: `url('f3.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-1 col-6 `}
@@ -241,7 +241,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('c4.png')` }}
+          style={{ backgroundImage: `url('c4.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-2 col-6 `}
@@ -265,7 +265,7 @@ export default function Aboutus() {
           data-aos-duration="1500"
           data-aos-delay="500"
           data-aos-once="true"
-          style={{ backgroundImage: `url('f5.png')` }}
+          style={{ backgroundImage: `url('f5.webp')` }}
         ></div>
         <div
           className={`${about.widd} p-2 col-6  `}

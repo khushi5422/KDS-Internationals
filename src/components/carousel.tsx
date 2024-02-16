@@ -11,24 +11,24 @@ const satisfyfont = Satisfy({
 const NextJsCarousel = () => {
   const images = [
     {
-      src: "c1.png",
+      src: "c1.webp",
       heading: " Herbs And Spices ",
 
     },
     {
-      src: "c2.png",
+      src: "c2.webp",
       heading: "The Choice Of Chefs",
 
 
     },
     {
-      src: "c3.png",
+      src: "c3.webp",
       heading: " All Organic Spices...",
 
 
     },
     {
-      src: "c4.png",
+      src: "c4.webp",
       heading: "We Provide Reliable & Fast Delivery",
 
 
@@ -68,7 +68,7 @@ const NextJsCarousel = () => {
         className={`legend animated ${index === selectedImageIndex ? "slide-active" : ""}`}
         style={{ animationDelay: `${index * 0.5}s`, animationDuration: '2000ms' }}
       >
-        <h1 className={satisfyfont.className}>{image.heading}</h1>
+        <h2 className={satisfyfont.className}>{image.heading}</h2>
         {/* ... rest of your legend content */}
       </div>
     </div>

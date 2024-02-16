@@ -10,6 +10,7 @@ import { EmblaOptionsType } from "embla-carousel";
 import ThumbnailCarousel from "@/components/thumbnailcarousal";
 import Head from "next/head";
 import ImageGallery from "@/components/imagegallery";
+import NewComponent from "@/components/new";
 const inter = Inter({ subsets: ["latin"] });
 const OPTIONS: EmblaOptionsType = { loop: true }
 const SLIDE_COUNT = 5

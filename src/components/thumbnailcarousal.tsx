@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Thumb } from './emblathumb'
-import imageByIndex from './imageByIndex'
+import imageByIndex, { name } from './imageByIndex'
 import Autoplay from 'embla-carousel-autoplay';
 
 type PropType = {
@@ -52,7 +52,7 @@ const ThumbnailCarousel: React.FC<PropType> = (props) => {
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
-                <span>{index + 1}</span>
+                <span>{name[index]}</span>
               </div>
               <img
                 className="embla__slide__img"

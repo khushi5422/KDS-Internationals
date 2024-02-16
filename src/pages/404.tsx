@@ -15,7 +15,7 @@ export default function Custom404() {
       `}</style>
       <div className="center mt-3">
         <img
-          src="error.png"
+          src="error.webp"
           alt="error message"
           className=" box align-center"
         />

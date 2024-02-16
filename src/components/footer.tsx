@@ -240,7 +240,7 @@ export default function Footer() {
                 <footer className="padding_2x">
                     <div className="flex">
                         <section className="flex-content padding_1x">
-                            <img src='../../logo.png' alt='Loading..' className='image_logo'></img>
+                            <img src='../../logo.webp' alt='Loading..' className='image_logo'></img>
                             <p className="mt-2">J K Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
                             We at J K Export having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
                                 </p>

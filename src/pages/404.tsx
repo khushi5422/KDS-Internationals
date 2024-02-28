@@ -18,6 +18,7 @@ export default function Custom404() {
           src="error.webp"
           alt="error message"
           className=" box align-center"
+          loading="lazy"
         />
       </div>
     </>

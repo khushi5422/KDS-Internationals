@@ -1,5 +1,8 @@
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { BsFillThreadsFill } from "react-icons/bs";
 import { IoMdMail } from 'react-icons/io';
 import { MdFiberManualRecord } from 'react-icons/md';
 import React from 'react';
@@ -240,7 +243,7 @@ export default function Footer() {
                 <footer className="padding_2x">
                     <div className="flex">
                         <section className="flex-content padding_1x">
-                            <img src='../../logo.webp' alt='Loading..' className='image_logo'></img>
+                            <img src='../../logo.webp' alt='Loading..' className='image_logo' loading="lazy" />
                             <p className="mt-2">J K Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
                             We at J K Export having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
                                 </p>
@@ -260,6 +263,9 @@ export default function Footer() {
                             <Link href="#" className='small'><FaMapMarkerAlt color='orange'/> Ahmedabad , India</Link>
                             <Link href="tel://+91 9512154200" className='small'><BsFillTelephoneFill color='orange'/> +91 9512154200</Link> 
                             <Link href="mailto:jkexports0220@gmail.com" className='small'><IoMdMail color='orange'/> jkexports0220@gmail.com</Link>
+                            <Link href="https://www.instagram.com/_jk_exports/" className='small'><AiFillInstagram   color='orange'/>_jk_exports</Link>
+                            <Link href="https://www.facebook.com/jkexports2023" className='small'><FaFacebook  color='orange'/>jkexports2023</Link>
+                            <Link href="https://www.threads.net/@_jk_exports" className='small'><BsFillThreadsFill color='orange'/> _jk_exports</Link>
                             </div>
                             
                         </section>

@@ -101,7 +101,7 @@ export default function NewComponent(props:any) {
             <div className="boooerr">
                 <div className="dump">
                     <div className="dump-overlay"></div>
-                    <img className="dump-image" src={props.img} alt={props.title} />
+                    <img className="dump-image" src={props.img} alt={props.title} loading="lazy" />
                     <div className="dump-details fadeIn-bottom">
                         <h3 className="dump-title">{props.title}</h3>
                     </div>

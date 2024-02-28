@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@nextui-org/accordion": "^2.0.28",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.2",
     "emailjs": "^4.0.3",

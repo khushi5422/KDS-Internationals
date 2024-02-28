@@ -18,7 +18,7 @@ export default function Document() {
       </Head>
       <body>
         <div id="globalLoader">
-          <img src="loader.gif" alt="loader" />
+          <img src="loader.gif" alt="loader" loading="lazy" />
         </div>
         <Main />
         <NextScript />

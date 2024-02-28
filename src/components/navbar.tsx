@@ -74,11 +74,12 @@ const Navigationbar = () => {
       <Navbar className="bg" variant="dark" expand="lg">
       {/* fixed="top" */}
       <Container className="ps-0">
-        <Navbar.Brand href="#" className="wid">
+        <Navbar.Brand href="/" className="wid">
           <img
             src="../../logo.webp"
             alt="Logo"
             className="logo"
+            loading="lazy"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />

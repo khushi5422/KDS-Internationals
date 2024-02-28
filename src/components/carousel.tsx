@@ -63,7 +63,7 @@ const NextJsCarousel = () => {
 >
   {images.map((image, index) => (
     <div key={index} className={`override carousel-slide slide${index + 1}`}>
-      <img src={image.src} alt={`image${index + 1}`} height={0} className="hei" />
+      <img src={image.src} alt={`image${index + 1}`} height={0} className="hei" loading="lazy" />
       <div
         className={`legend animated ${index === selectedImageIndex ? "slide-active" : ""}`}
         style={{ animationDelay: `${index * 0.5}s`, animationDuration: '2000ms' }}

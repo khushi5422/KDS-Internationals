@@ -58,6 +58,7 @@ const ThumbnailCarousel: React.FC<PropType> = (props) => {
                 className="embla__slide__img"
                 src={imageByIndex(index)}
                 alt="Your alt text"
+                loading="lazy"
               />
             </div>
           ))}

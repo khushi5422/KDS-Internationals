@@ -97,7 +97,7 @@ const Caard: React.FC<CaardProps> = ({ spices }) => {
           {spices.map((spice, index) => (
             <article key={index} className='sparkle u-hover--sparkle'>
               <figure>
-                <img src={spice.img} alt={spice.title}/>
+                <img src={spice.img} alt={spice.title} loading="lazy"/>
               </figure>
               <div className="article-preview">
                 <h2>{spice.title}</h2>

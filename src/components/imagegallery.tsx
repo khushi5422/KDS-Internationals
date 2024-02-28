@@ -47,24 +47,24 @@ export default function ImageGallery() {
     // `}</style>
       <div className="row mt-5">
         <div className="column">
-          <img src="blackcardemon.webp" alt="blackcardemon" />
-          <img src="blackpepper.webp" alt="blackpepper" />
+          <img src="blackcardemon.webp" alt="blackcardemon"  loading="lazy"/>
+          <img src="blackpepper.webp" alt="blackpepper" loading="lazy" />
 
-          <img src="chilly.webp" alt="chilly" />
+          <img src="chilly.webp" alt="chilly"  loading="lazy"/>
         </div>
         <div className="column">
-          <img src="cumin.webp" alt="cumin" />
+          <img src="cumin.webp" alt="cumin" loading="lazy" />
 
-          <img src="Fennelseeds.webp" alt="Fennelseeds" />
+          <img src="Fennelseeds.webp" alt="Fennelseeds" loading="lazy" />
 
-          <img src="garlic.webp" alt="garlic" />
+          <img src="garlic.webp" alt="garlic"  loading="lazy"/>
         </div>
         <div className="column">
-          <img src="ginger.webp" alt="ginger" />
+          <img src="ginger.webp" alt="ginger"  loading="lazy"/>
 
-          <img src="greenchilly.webp" alt="greenchilly" />
+          <img src="greenchilly.webp" alt="greenchilly"  loading="lazy"/>
 
-          <img src="poppyseeds.webp" alt="poppyseeds" />
+          <img src="poppyseeds.webp" alt="poppyseeds" loading="lazy" />
         </div>
       </div>
     </>

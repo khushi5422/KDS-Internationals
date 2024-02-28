@@ -28,6 +28,7 @@ export const Thumb: React.FC<PropType> = (props) => {
           className="embla-thumbs__slide__img"
           src={imgSrc}
           alt="Your alt text"
+          loading="lazy"
         />
       </button>
     </div>

@@ -58,6 +58,7 @@ const AboutUs = () => {
                   src="/fullspice.webp" // Update the path to your image
                   alt="About Us"
                   className="img_fluid"
+                  loading="lazy"
                 />
               </div>
             </Col>

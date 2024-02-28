@@ -53,6 +53,7 @@ export default function Slider() {
                 src={imageUrl}
                 alt={`image${index + 1}`}
                 height={300}
+                loading="lazy"
               />
               {hoveredIndex === index && <div className={`${classes.name}`}>{spiceNames[index]}</div>}
             </div>

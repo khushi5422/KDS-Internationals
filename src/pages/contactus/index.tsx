@@ -286,6 +286,7 @@ const ContactFooorm: React.FC = () => {
                                 height={25}
                                 width={25}
                                 alt="location"
+                                loading="lazy"
                               />
                               <strong className="me-auto">Sent Successfully!</strong>
                               <button
@@ -321,6 +322,7 @@ const ContactFooorm: React.FC = () => {
                                 height={25}
                                 width={25}
                                 alt="location"
+                                loading="lazy"
                               />
                               <strong className="me-auto text-danger">ERROR OCCURED</strong>
                               <button
@@ -353,7 +355,7 @@ const ContactFooorm: React.FC = () => {
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                          <img src='location.svg' alt="location" />
+                          <img src='location.svg' alt="location" loading="lazy" />
                         </div>
                         <div className="text">
                           <p>
@@ -365,7 +367,7 @@ const ContactFooorm: React.FC = () => {
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                          <img src='call.svg' alt="Phone Number" />
+                          <img src='call.svg' alt="Phone Number" loading="lazy"/>
                         </div>
                         <div className="text">
                           <p>
@@ -378,7 +380,7 @@ const ContactFooorm: React.FC = () => {
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                          <img src='whatsapp.svg' alt="WhatsApp" />
+                          <img src='whatsapp.svg' alt="WhatsApp" loading="lazy" />
                         </div>
                         <div className="text">
                           <p>
@@ -390,7 +392,7 @@ const ContactFooorm: React.FC = () => {
                     <div className="col-md-3 boxtop">
                       <div className="dbox w-100 text-center">
                         <div className="icon d-flex align-items-center justify-content-center">
-                          <img src='mail.svg' alt="Mail Id" />
+                          <img src='mail.svg' alt="Mail Id" loading="lazy" />
                         </div>
                         <div className="text">
                           <p>

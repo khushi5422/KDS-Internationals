@@ -4,20 +4,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import NavItem from "./navitem";
-
-
-const MENU_LIST = [
-  { text: "Home", href: "/" },
-  { text: "About Us", href: "/aboutus" },
-  { text: "Gallery ", href: "/gallery" },
-  { text: "FAQ ", href: "/faq" },
-  { text: "Contact", href: "/contactus" },
-];
 const Navigationbar = () => {
-  const [navActive, setNavActive] = useState(false);
-  const [activeIdx, setActiveIdx] = useState(-1);
-
   return (
     <>
       <style>{`
@@ -43,34 +30,6 @@ const Navigationbar = () => {
     
     
     `}</style>
-      {/* <header>
-        <nav className={`nav`}>
-          <Link href={"/"}>
-            <img src="../../logo.webp" alt="Loading.." className="image_logo" />
-          </Link>
-          <div
-            onClick={() => setNavActive(!navActive)}
-            className={`nav__menu-bar`}
-          >
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-            {MENU_LIST.map((menu, idx) => (
-              <div
-                onClick={() => {
-                  setActiveIdx(idx);
-                  setNavActive(false);
-                }}
-                key={menu.text}
-              >
-                <NavItem active={activeIdx === idx} {...menu} />
-              </div>
-            ))}
-          </div>
-        </nav>
-      </header> */}
       <Navbar className="bg" variant="dark" expand="lg">
       {/* fixed="top" */}
       <Container className="ps-0">
@@ -89,6 +48,7 @@ const Navigationbar = () => {
             <Nav.Link href="/aboutus">About</Nav.Link>
             <Nav.Link href="/gallery">Gallery</Nav.Link>
             <Nav.Link href="/contactus">Contact</Nav.Link>
+            <Nav.Link href="/blog">Blog</Nav.Link>
             <Nav.Link href="/faq">FAQ</Nav.Link>
           </Nav>
         </Navbar.Collapse>

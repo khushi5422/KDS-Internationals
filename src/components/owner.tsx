@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import styles from "../styles/Home.module.css";
 import Image from 'next/image';
@@ -7,8 +6,6 @@ import Image from 'next/image';
 
 export default function Owner() {
     return (
-        <>
-
             <div className={`${styles.parallaxContainer}`}>
                 <div className={`${styles.parallaxCaaard} ${styles.parallaxowner} mt-3`}></div>
                 <div className={`${styles.parallaxCard}`}>
@@ -31,7 +28,5 @@ export default function Owner() {
                     </Card>
                 </div>
             </div>
-
-        </>
     )
 }

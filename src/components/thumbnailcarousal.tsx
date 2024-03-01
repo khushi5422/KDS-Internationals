@@ -4,7 +4,6 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { Thumb } from './emblathumb'
 import imageByIndex, { name } from './imageByIndex'
 import Autoplay from 'embla-carousel-autoplay';
-
 type PropType = {
   slides?: number[]
   options?: EmblaOptionsType
@@ -14,7 +13,6 @@ const autoplayOptions = {
   stopOnInteraction: true, // Whether to stop autoplay on user interaction
   // ... other options
 };
-
 const ThumbnailCarousel: React.FC<PropType> = (props) => {
   const { slides=[], options } = props
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -23,7 +21,6 @@ const ThumbnailCarousel: React.FC<PropType> = (props) => {
     containScroll: 'keepSnaps',
     dragFree: true
   })
-
   const onThumbClick = useCallback(
     (index: number) => {
       if (!emblaMainApi || !emblaThumbsApi) return
@@ -31,20 +28,17 @@ const ThumbnailCarousel: React.FC<PropType> = (props) => {
     },
     [emblaMainApi, emblaThumbsApi]
   )
-
   const onSelect = useCallback(() => {
     if (!emblaMainApi || !emblaThumbsApi) return
     setSelectedIndex(emblaMainApi.selectedScrollSnap())
     emblaThumbsApi.scrollTo(emblaMainApi.selectedScrollSnap())
   }, [emblaMainApi, emblaThumbsApi, setSelectedIndex])
-
   useEffect(() => {
     if (!emblaMainApi) return
     onSelect()
     emblaMainApi.on('select', onSelect)
     emblaMainApi.on('reInit', onSelect)
   }, [emblaMainApi, onSelect])
-
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaMainRef}>
@@ -64,7 +58,6 @@ const ThumbnailCarousel: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
-
       <div className="embla-thumbs">
         <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
           <div className="embla-thumbs__container">
@@ -83,5 +76,4 @@ const ThumbnailCarousel: React.FC<PropType> = (props) => {
     </div>
   )
 }
-
 export default ThumbnailCarousel

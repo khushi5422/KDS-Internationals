@@ -1,3 +1,15 @@
+.mobile_content {
+  display: none;
+}
+@media (max-width: 767px) {
+  .desktop_content {
+    display: none;
+  }
+
+  .mobile_content {
+    display: block;
+  }
+}
 .around {
   display: flex;
   justify-content: space-around;
@@ -19,12 +31,6 @@
   bottom: 0;
   left: 0;
   box-shadow: 8px 8px 0px 0px #fac213;
-}
-.containeer {
-  width: 7%;
-  height: 8%;
-  background: aqua;
-  text-align: center;
 }
 .widd {
   width: 47%;
@@ -57,8 +63,5 @@
     color: gray;
     font-size: smaller;
   }
-}
-.fit {
-  width: fit-content;
 }
 

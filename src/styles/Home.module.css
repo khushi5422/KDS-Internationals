@@ -1,3 +1,120 @@
+/* Navbar */
+
+.navbg {
+  background-color: #182933;
+  z-index: 1000;
+}
+.navlogo {
+  width: 6%; /* Adjust the width as needed */
+  height: auto;
+}
+@media (max-width: 768px) {
+  .navwid {
+    width: 72%;
+  }
+  .navlogo {
+    width: 15%;
+    margin-left: 3vw;
+  }
+}
+
+.carouselhei {
+  height: 100vh;
+  width: 100vw;
+}
+
+.about_title {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about_paragraph {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.about_image {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutmid {
+  font-size: medium;
+  margin-top: 3vh;
+}
+.img_fluid {
+  max-width: 100%;
+  height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .about_content,
+  .about_image {
+    text-align: center;
+    padding: 5vw;
+  }
+}
+
+.car {
+  background-color: #fffffff7;
+  padding: 34px;
+  min-height: 300px;
+  min-width: 300px;
+}
+.cbody {
+  padding: 0;
+  text-align: center;
+}
+.fonn {
+  font-size: medium;
+}
+@media only screen and (max-width: 769px) {
+  .mobile {
+    flex-direction: column;
+  }
+  .fonn {
+    font-size: x-small;
+  }
+}
+
+.gallery_row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gallery_column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.gallery_column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.gallery_column img:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 700px) {
+  .gallery_column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .gallery_column img {
+    filter: grayscale(1) brightness(0.5);
+  }
+}
+
 .bg {
   background-image: url("~/public/c1.webp");
 }
@@ -55,7 +172,7 @@
   transform: translate(-50%, -50%);
   color: #fff; /* Adjust the color as needed */
 }
-@media only screen and (max-width: 769px) { 
+@media only screen and (max-width: 769px) {
   .parallax,
   .bg,
   .parallaxCaaard,
@@ -63,24 +180,24 @@
     background-attachment: scroll;
     position: relative;
   }
-  .parallaxCaaard {  
+  .parallaxCaaard {
     min-width: 30%;
-  } 
+  }
   .parallaxText {
     left: 39%;
   }
   .parallaxCaaard {
     min-height: 1000px;
-    min-width: 100%;   
+    min-width: 100%;
   }
   .parallaxowner {
     min-height: 650px;
   }
   .parallaxCaaardService {
-     min-height: 600px; 
-    min-height: 990px; 
+    min-height: 600px;
+    min-height: 990px;
   }
-} 
+}
 
 .slider {
   height: 300px;

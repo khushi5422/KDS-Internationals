@@ -1,0 +1,46 @@
+.wrapper{
+    width: 100%;
+  }
+  .backg{
+    background-color: #182933
+  }
+  
+ 
+  .boxtop{
+    display: flex;
+    max-width: 17.8125rem;
+    padding: 0rem 0.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+  .boxtop:hover{
+     transform: scale(1.2);
+  }
+  .dbox{
+    display: flex;
+    width: 15.9375rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1875rem;
+    }
+    .icon{
+    display: flex;
+    height: 3.75rem;
+    padding: 1.25rem 1.5175rem;
+    justify-content: center;
+    align-items: center;
+    }
+    .text{
+    display: flex;
+    width: 15.9375rem;
+    padding: 0rem 0.36313rem 0.03688rem 1.01188rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media only screen and (max-width: 426px) {
+    .row {
+      flex-direction: column;
+align-items: center;
+    }
+  }

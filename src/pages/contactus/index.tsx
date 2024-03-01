@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import Contact from '@/styles/Contact.module.css'
 interface FormData {
   cont_name: string;
   cont_company: string;
@@ -14,7 +15,6 @@ const ContactFooorm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [erroroccured, seterroroccured] = useState(false);
-
   //DATABASE
   const [formData, setFormData] = useState<FormData>({
     cont_name: "",
@@ -23,14 +23,12 @@ const ContactFooorm: React.FC = () => {
     cont_phone: "",
     message: "",
   });
-
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("DATTTTTTTTTAAAAAAAAAA:", formData);
@@ -86,8 +84,6 @@ const ContactFooorm: React.FC = () => {
         );
     }
   };
-
-
   return (
     <>
       <Head>
@@ -96,17 +92,6 @@ const ContactFooorm: React.FC = () => {
       </Head>
       <style>
         {`
-        .wrapper{
-          width: 100%;
-        }
-        .backg{
-          background-color: #182933
-        }
-        .imgfluidimg{
-          max-width: 100%;
-          height: 100%;
-        }
-        
         .row {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -114,68 +99,26 @@ const ContactFooorm: React.FC = () => {
           -ms-flex-wrap: wrap;
           flex-wrap: wrap;
           margin-right: -15px;
-          margin-left: -15px; }
-       
-        .boxtop{
-          display: flex;
-          max-width: 17.8125rem;
-          padding: 0rem 0.9375rem;
-          flex-direction: column;
-          align-items: flex-start;
-          flex: 1 0 0;
-        }
-        .boxtop:hover{
-          // transform: scale(1.2);
-        }
-        .dbox{
-          display: flex;
-          width: 15.9375rem;
-          flex-direction: column;
-          align-items: center;
-          gap: 1.1875rem;
-          }
-          .icon{
-          display: flex;
-          height: 3.75rem;
-          padding: 1.25rem 1.5175rem;
-          justify-content: center;
-          align-items: center;
-          }
-          .text{
-          display: flex;
-          width: 15.9375rem;
-          padding: 0rem 0.36313rem 0.03688rem 1.01188rem;
-          flex-direction: column;
-          align-items: center;
-        }
-        @media only screen and (max-width: 426px) {
-          .row {
-            flex-direction: column;
-    align-items: center;
-          }
+          margin-left: -15px; 
         }
       `}
       </style>
       <div>
-        <section className="ftco-section">
+        <section>
           <div className="container">
-            <div className="row justify-content-center">
+            <div className={`row justify-content-center`}>
               <div className="col-md-12">
-                <div className="wrapper ">
-                  <div className="row no-gutters mb-5 backg  mt-5"
+                <div className={`${Contact.wrapper}`}>
+                  <div className={`${Contact.backg} row no-gutters mb-5 mt-5`}
                     data-aos="flip-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000"
                     data-aos-once="true">
                     <div className="col-md-7">
-                      <div className="contact-wrap w-100 p-md-5 p-4">
+                      <div className="w-100 p-md-5 p-4">
                         <h3 className="mb-4 text-white">Contact Us</h3>
-                        {/* <div id="form-message-warning" className="mb-4"></div>
-                        <div id="form-message-success" className="mb-4">
-                          Your message was sent, thank you!
-                        </div> */}
                         <form onSubmit={handleSubmit} ref={form}>
-                          <div className="row">
+                          <div className={`row`}>
                             <div className="col-md-6">
                               <div className="form-group">
                                 <label className="label" htmlFor="name">
@@ -351,25 +294,25 @@ const ContactFooorm: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="row justify-content-between">
-                    <div className="col-md-3 boxtop">
-                      <div className="dbox w-100 text-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                  <div className={`row justify-content-between`}>
+                    <div className={`${Contact.boxtop}col-md-3`}>
+                      <div className={`${Contact.dbox}  w-100 text-center`}>
+                        <div className={`${Contact.icon}d-flex align-items-center justify-content-center`}>
                           <img src='location.svg' alt="location" loading="lazy" />
                         </div>
-                        <div className="text">
+                        <div className={`${Contact.text}`}>
                           <p>
                             <span>Address:</span> Ahmedabad , India
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-3 boxtop">
-                      <div className="dbox w-100 text-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                    <div className={`${Contact.boxtop}col-md-3`}>
+                      <div className={`${Contact.dbox} w-100 text-center`}>
+                        <div className={`${Contact.icon}d-flex align-items-center justify-content-center`}>
                           <img src='call.svg' alt="Phone Number" loading="lazy"/>
                         </div>
-                        <div className="text">
+                        <div className={`${Contact.text}`}>
                           <p>
                             <span>Phone:</span>{" "}
                             <Link href="tel://+91 9512154200" className="text-dark">+91 9512154200</Link>
@@ -377,24 +320,24 @@ const ContactFooorm: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-3 boxtop">
-                      <div className="dbox w-100 text-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                    <div className={`${Contact.boxtop}col-md-3`}>
+                      <div className={`${Contact.dbox} w-100 text-center`}>
+                        <div className={`${Contact.icon}d-flex align-items-center justify-content-center`}>
                           <img src='whatsapp.svg' alt="WhatsApp" loading="lazy" />
                         </div>
-                        <div className="text">
+                        <div className={`${Contact.text}`}>
                           <p>
                             <span>WhatsApp</span> <Link href="https://wa.me/919512154200?text=Hello I want to buy spice from you" className="text-dark">+91 9512154200</Link>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-3 boxtop">
-                      <div className="dbox w-100 text-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                    <div className={`${Contact.boxtop}col-md-3`}>
+                      <div className={`${Contact.dbox} w-100 text-center`}>
+                        <div className={`${Contact.icon}d-flex align-items-center justify-content-center`}>
                           <img src='mail.svg' alt="Mail Id" loading="lazy" />
                         </div>
-                        <div className="text">
+                        <div className={`${Contact.text}`}>
                           <p>
                             <span>Email:</span>{" "}
                             <Link href="mailto:jkexports0220@gmail.com" className="text-dark">

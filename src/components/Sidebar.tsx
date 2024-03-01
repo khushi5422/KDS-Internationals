@@ -1,26 +1,25 @@
+// components/Sidebar.tsx
 import React from 'react';
-
+import { useRouter } from 'next/router';
 interface SidebarProps {
   articles: { title: string; content: string }[];
-  onArticleChange: (index: number) => void;
 }
-
-const Sidebar: React.FC<SidebarProps> = ({ articles, onArticleChange }) => {
+const Sidebar: React.FC<SidebarProps> = ({ articles }) => {
+  const router = useRouter();
+  const handleArticleClick = (title: string) => {
+    router.push(`/blog/${encodeURIComponent(title)}`);
+  };
   return (
     <div>
       <h3>Related Articles</h3>
-      <ul>
-        {/* <li>
-          <button onClick={() => onArticleChange(0)}>{articles[0].title}</button>
-        </li> */}
+      <ul className='paint'style={{color : 'pink'}}>
         {articles.map((article, index) => (
           <li key={index}>
-            <button onClick={() => onArticleChange(index)}>{article.title}</button>
+            <a onClick={() => handleArticleClick(article.title)}>{article.title}</a>
           </li>
         ))}
       </ul>
     </div>
   );
 };
-
 export default Sidebar;

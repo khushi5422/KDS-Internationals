@@ -13,7 +13,6 @@ export default function Slider() {
     "chilly.webp","coriander.webp","mace.webp","poppyseeds.webp",
     "greencardamom.webp","greenchilly.webp"
   ];
-
   const spiceNames = [
     "Black Cardamom",
     "Ginger",
@@ -34,11 +33,8 @@ export default function Slider() {
     "Green Cardamon",
     "Green Chilly"
   ];
-
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
-    <>
       <div className={`${classes.slider} mt-5 mb-4`}>
         <div className={`${classes.slide_track} ${hoveredIndex !== null && classes.paused}`}>
           {spicesimage.map((imageUrl, index) => (
@@ -60,6 +56,5 @@ export default function Slider() {
           ))}
         </div>
       </div>
-    </>
   );
 }

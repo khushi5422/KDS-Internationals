@@ -1,10 +1,8 @@
 import React from 'react';
-
 interface MainArticleProps {
   title: string;
   content: string;
 }
-
 const MainArticle: React.FC<MainArticleProps> = ({ title, content }) => {
   return (
     <div>
@@ -13,5 +11,4 @@ const MainArticle: React.FC<MainArticleProps> = ({ title, content }) => {
     </div>
   );
 };
-
 export default MainArticle;

@@ -4,9 +4,12 @@ body {
 
 a {
   text-decoration: none !important;
-  color: rgb(255, 255, 255) !important;
+  color: rgb(171, 83, 83);
+  cursor: pointer;
 }
-
+/* .white_link a ,p ,h1,h2,h3,h4{
+  color: white !important;
+} */
 .hideOverflowOnMobile {
   overflow-x: hidden;
 }

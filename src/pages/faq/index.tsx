@@ -1,16 +1,14 @@
+import ScaleCarousel from "@/components/scalecarousel";
+import { EmblaOptionsType } from "embla-carousel";
 import Head from "next/head";
-import Image from "next/image";
 import React, { useState } from "react";
-import { Accordion, AccordionItem } from "@nextui-org/accordion";
-import { Card, Container } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 
 export default function FAQ() {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
-
   const toggleAccordion = (targetId: string) => {
     setActiveAccordion((prev) => (prev === targetId ? null : targetId));
   };
-
   const accordionItems = [
     {
       title: "Ordering Process",
@@ -34,14 +32,18 @@ export default function FAQ() {
     },
   ];
 
+  const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDE_COUNT2 = 10
+const SLIDES = Array.from(Array(SLIDE_COUNT2).keys())
   return (
     <>
       <Head>
         <title>FREQUENTLY ASKED QUESTIONS</title>
         <meta name="description" content="Frequently Asked Questions" />
       </Head>
+      <ScaleCarousel slides={SLIDES} options={OPTIONS} />
       <h2 className="p-2 text-center mt-1">FREQUENTLY ASKED QUESTIONS</h2>
-      <Container>
+      <Container  className="mb-5">
         <div className="accordion" id="accordionExample">
           {accordionItems.map((item, index) => (
             <div key={index} className="accordion-item">

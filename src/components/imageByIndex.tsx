@@ -27,5 +27,6 @@ export const images: string[] = [
     ];
   
   const imageByIndex = (index: number): string => images[index % images.length];
+  const nameByIndex = (index: number): string => name[index % name.length]
   
   export default imageByIndex;

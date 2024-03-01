@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import next from "next";
+import Home from '@/styles/Home.module.css'
 import { Satisfy } from "next/font/google";
 const satisfyfont = Satisfy({
   weight: '400',
@@ -34,21 +35,11 @@ const NextJsCarousel = () => {
 
     }
   ];
-
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
   const handleImageChange = (index: React.SetStateAction<number>) => {
     setSelectedImageIndex(index);
   };
-
   return (
-    <>
-      <style>{`
-   .hei{
-    height :100vh;
-    width : 100vw;
-   }
-    `}</style>
       <Carousel
   className="custom"
   selectedItem={selectedImageIndex}
@@ -59,11 +50,10 @@ const NextJsCarousel = () => {
   autoPlay={true}
   infiniteLoop={true}
   interval={1500}
-  stopOnHover={true}
->
+  stopOnHover={true}>
   {images.map((image, index) => (
     <div key={index} className={`override carousel-slide slide${index + 1}`}>
-      <img src={image.src} alt={`image${index + 1}`} height={0} className="hei" loading="lazy" />
+      <img src={image.src} alt={`image${index + 1}`} height={0} className={`${Home.carouselhei}`} loading="lazy" />
       <div
         className={`legend animated ${index === selectedImageIndex ? "slide-active" : ""}`}
         style={{ animationDelay: `${index * 0.5}s`, animationDuration: '2000ms' }}
@@ -74,8 +64,6 @@ const NextJsCarousel = () => {
     </div>
   ))}
 </Carousel>
-</>
   );
 };
-
 export default NextJsCarousel;

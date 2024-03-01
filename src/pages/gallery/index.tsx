@@ -97,11 +97,7 @@ export default function GalleryPage() {
       title: "Green chilli pepper",
       description: "Green chilli pepper is the fruit of plants in the Capsicum genus, which belongs to the Solanaceae family. Chilli peppers are used to spice up dishes in a variety of cuisines. Every year, the Green Chilli Pepper exporter in India exports tonnes of the product to a variety of countries. The export of Green Chilli pepper from India has increased over time as the product's popularity and uses have grown. This is an excellent opportunity for the Indian green chili pepper exporter to grow his firm and access the international market. India exports a wide range of Green Chilli Peppers.",
     },
-    
   ];
-
-  
-
   return (
     <>
       <Head>
@@ -121,11 +117,7 @@ export default function GalleryPage() {
                 "description": spice.description,
                 "brand": {
                   "@type": "Brand",
-                  "name": "J K Exports"
-                }
-              }
-            }))
-          })}
+                  "name": "J K Exports"}}}))})}
         </script>
       </Head>
       <div>

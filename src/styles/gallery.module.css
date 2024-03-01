@@ -1,70 +1,75 @@
-/* styles.css */
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
+.background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 50px 32px;
+}
+@media (max-width: 768px) {
+  .background {
+      padding: 20px 12px;
+  }
 }
 
-.main {
-  max-width: 1000px;
-  margin: auto;
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 ;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 10px;
+  
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that float next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
+.articles article {
+  max-width: 320px;
   cursor: pointer;
+  position: relative;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
 
-.btn:hover {
-  background-color: #ddd;
+.articles article a {
+  display: inline-flex;
+  color: var(--primary);
+  text-decoration: none;
 }
 
-.btn.active {
-  background-color: #666;
-  color: white;
+
+.articles article h2 {
+  margin: 0 0 18px 0;
+  font-size: 1.6rem;
+  color: black;
+  transition: color 0.3s ease-out;
 }
 
+
+.articles article img {
+  max-width: 100%;
+  transform-origin: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.article_preview {
+  padding: 10px;
+  overflow-wrap: anywhere;
+}
+
+.articles figure {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin : 0;
+}
+
+.articles figure img {
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.articles article:hover img {
+  transform: scale(1.5); 
+}

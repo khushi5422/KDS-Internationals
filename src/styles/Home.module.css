@@ -1,11 +1,11 @@
 /* Navbar */
 
 .navbg {
-  background-color: #182933;
+  background-color: #dff3ff;
   z-index: 1000;
 }
 .navlogo {
-  width: 6%; /* Adjust the width as needed */
+   width: 10%; /*Adjust the width as needed */
   height: auto;
 }
 @media (max-width: 768px) {

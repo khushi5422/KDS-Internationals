@@ -140,7 +140,7 @@ export default function Footer() {
                 <footer className={`${Home.white_link} p-2`}>
                     <div className="flex">
                         <section className="flex-content p-1">
-                            <img src='../../logo.webp' alt='Loading..' className='image_logo' loading="lazy" />
+                            <img src='../../logo.svg' alt='Loading..' className='image_logo' loading="lazy" />
                             <p className="mt-2 text-white">J K Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
                             We at J K Export having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
                                 </p>

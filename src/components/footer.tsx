@@ -141,8 +141,8 @@ export default function Footer() {
                     <div className="flex">
                         <section className="flex-content p-1">
                             <img src='../../logo.svg' alt='Loading..' className='image_logo' loading="lazy" />
-                            <p className="mt-2 text-white">J K Exports are a new edge od spice exporter who deliveres world best spice from heart of India.
-                            We at J K Export having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
+                            <p className="mt-2 text-white">KDS Internationals are a new edge od spice exporter who deliveres world best spice from heart of India.
+                            We at KDS Internationals having good associations with USA, Canada, Dubai, Saudi Arabia, Australia, Germany, UK, Russia and worldwide.
                                 </p>
                         </section>
                         <section className="flex-content p-1">
@@ -159,7 +159,7 @@ export default function Footer() {
                             <div className='p-0 m-0 d-flex flex-column '>
                             <Link href="#" className='small text-white'><FaMapMarkerAlt color='orange'/> Ahmedabad , India</Link>
                             <Link href="tel://+91 9512154200" className='small text-white'><BsFillTelephoneFill color='orange'/> +91 9512154200</Link> 
-                            <Link href="mailto:jkexports0220@gmail.com" className='small text-white'><IoMdMail color='orange'/> jkexports0220@gmail.com</Link>
+                            <Link href="mailto:kdsinternationals@gmail.com" className='small text-white'><IoMdMail color='orange'/> jkexports0220@gmail.com</Link>
                             <Link href="https://www.instagram.com/_jk_exports/" className='small text-white'><AiFillInstagram   color='orange'/> _jk_exports</Link>
                             <Link href="https://www.facebook.com/jkexports2023" className='small text-white'><FaFacebook  color='orange'/> jkexports2023</Link>
                             <Link href="https://www.threads.net/@_jk_exports" className='small text-white'><BsFillThreadsFill color='orange'/> _jk_exports</Link>
@@ -179,7 +179,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <section className="flex-content p-1 text-center bg text-white">
-                            <p>Copyright ©2020 All rights reserved || J K Exports</p>
+                            <p>Copyright ©2020 All rights reserved || KDS Internationals</p>
                         </section>
                     </div>
                 

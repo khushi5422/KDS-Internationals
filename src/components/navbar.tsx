@@ -13,7 +13,7 @@ const Navigationbar = () => {
       <Container className="ps-0">
         <Navbar.Brand href="/" className={`${Home.navwid}`}>
           <img
-            src="../../logo.webp"
+            src="../../logo.svg"
             alt="Logo"
             className={`${Home.navlogo}`}
             loading="lazy"
@@ -22,12 +22,12 @@ const Navigationbar = () => {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="/" className="text-white" >Home</Nav.Link>
-            <Nav.Link href="/aboutus" className="text-white">About</Nav.Link>
-            <Nav.Link href="/gallery" className="text-white" >Gallery</Nav.Link>
-            <Nav.Link href="/contactus" className="text-white" >Contact</Nav.Link>
-            <Nav.Link href="/blog" className="text-white" >Blog</Nav.Link>
-            <Nav.Link href="/faq"className="text-white" >FAQ</Nav.Link>
+            <Nav.Link href="/" className="text-dark" >Home</Nav.Link>
+            <Nav.Link href="/aboutus" className="text-dark">About</Nav.Link>
+            <Nav.Link href="/gallery" className="text-dark" >Gallery</Nav.Link>
+            <Nav.Link href="/contactus" className="text-dark" >Contact</Nav.Link>
+            <Nav.Link href="/blog" className="text-dark" >Blog</Nav.Link>
+            <Nav.Link href="/faq"className="text-dark" >FAQ</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

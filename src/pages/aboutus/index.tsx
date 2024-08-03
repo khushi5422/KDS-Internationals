@@ -34,7 +34,7 @@ export default function Aboutus() {
             data-aos-once="true">
             <h1>Spices Exporter & Food Supplier Department</h1>
             <div className={`${about.grey}`}>
-              Welcome to J K Exports, your gateway to a world of exquisite flavors and premium quality spices. As pioneers in the spices export industry, we take pride in sourcing and delivering the finest ingredients to kitchens worldwide, ensuring a culinary experience like no other.
+              Welcome to KDS Internationals , your gateway to a world of exquisite flavors and premium quality spices. As pioneers in the spices export industry, we take pride in sourcing and delivering the finest ingredients to kitchens worldwide, ensuring a culinary experience like no other.
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Aboutus() {
             data-aos-once="true">
             <h1>Exploring Culinary Horizons</h1>
             <p className={`${about.grey}`}>
-              Immerse yourself in the rich tapestry of taste with J K Exports, where each spice blend is a testament to our dedication to quality and authenticity. As leaders in the industry, we cater to the discerning palate of chefs and home cooks alike, offering a diverse range of spices sourced from the worlds leading producers.
+              Immerse yourself in the rich tapestry of taste with KDS Internationals, where each spice blend is a testament to our dedication to quality and authenticity. As leaders in the industry, we cater to the discerning palate of chefs and home cooks alike, offering a diverse range of spices sourced from the worlds leading producers.
             </p>
           </div>
           <div
@@ -74,7 +74,7 @@ export default function Aboutus() {
             data-aos-once="true">
             <h1>Unveiling the Essence</h1>
             <div className={`${about.grey}`}>
-              At J K Exports, we believe in forging meaningful connections through food. As the largest exporters of food, we understand the importance of trust and reliability in every transaction. From top exporters of rice to major food exporters, our extensive network ensures that the essence of Indian cuisine reaches every corner of the globe.
+              At KDS Internationals, we believe in forging meaningful connections through food. As the largest exporters of food, we understand the importance of trust and reliability in every transaction. From top exporters of rice to major food exporters, our extensive network ensures that the essence of Indian cuisine reaches every corner of the globe.
             </div>
           </div>
         </div>

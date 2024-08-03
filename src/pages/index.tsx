@@ -16,7 +16,7 @@ export default function Home() {
     <>
      <Head>
         <title>Trusted Source for Quality Organic Herbs and Spices </title>
-        <meta name="description" content="Discover the trusted source for quality organic herbs and spices at J K Exports " />
+        <meta name="description" content="Discover the trusted source for quality organic herbs and spices at KDS Internationals " />
       </Head>
       <NextJsCarousel />
       <AboutUs />

@@ -327,7 +327,7 @@ const ContactFooorm: React.FC = () => {
                         </div>
                         <div className={`${Contact.text}`}>
                           <p>
-                            <span>WhatsApp</span> <Link href="https://wa.me/91?text=Hello I want to buy spice from you" className="text-dark">+91 9512154200</Link>
+                            <span>WhatsApp</span> <Link href="https://wa.me/91?text=Hello I want to buy spice from you" className="text-dark">+91 </Link>
                           </p>
                         </div>
                       </div>

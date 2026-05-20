@@ -315,7 +315,7 @@ const ContactFooorm: React.FC = () => {
                         <div className={`${Contact.text}`}>
                           <p>
                             <span>Phone:</span>{" "}
-                            <Link href="tel://+91 9512154200" className="text-dark">+91 9512154200</Link>
+                            <Link href="tel://+91 " className="text-dark">+91 </Link>
                           </p>
                         </div>
                       </div>
@@ -327,7 +327,7 @@ const ContactFooorm: React.FC = () => {
                         </div>
                         <div className={`${Contact.text}`}>
                           <p>
-                            <span>WhatsApp</span> <Link href="https://wa.me/919512154200?text=Hello I want to buy spice from you" className="text-dark">+91 9512154200</Link>
+                            <span>WhatsApp</span> <Link href="https://wa.me/91?text=Hello I want to buy spice from you" className="text-dark">+91 9512154200</Link>
                           </p>
                         </div>
                       </div>
@@ -340,8 +340,8 @@ const ContactFooorm: React.FC = () => {
                         <div className={`${Contact.text}`}>
                           <p>
                             <span>Email:</span>{" "}
-                            <Link href="mailto:jkexports0220@gmail.com" className="text-dark">
-                              jkexports0220@gmail.com
+                            <Link href="mailto:@gmail.com" className="text-dark">
+                              @gmail.com
                             </Link>
                           </p>
                         </div>
